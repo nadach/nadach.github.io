@@ -1,0 +1,271 @@
+nocite: "[@*]"
+references:
+- abstract: Multi-Access Edge Computing (MEC) attracts much attention
+    from the scientific community due to its scientific, technical, and
+    commercial implications. In particular, the European
+    Telecommunications Standards Institute (ETSI) standard convergence
+    consolidates the discussions around MEC. Still, the existing MEC
+    practical initiatives are incomplete in their majority, hardening or
+    invalidating their effective deployment. To fill this gap, it is
+    essential to understand a series of experimental prototypes,
+    implementations, and deployments. The early implementations can
+    reveal the potential, the limitations, the related technologies, and
+    the development tools for MEC adoption. In this context, this work
+    first brings a discussion on existing MEC initiatives regarding the
+    use cases they target and their vision (i.e., whether they are more
+    network-related or more distributed systems). Second, we survey MEC
+    practical initiatives according to their strategies, including the
+    ETSI MEC standard. Besides, we compare the strategies according to
+    related limitations, impact, and deployment efforts. We also survey
+    the existing tools making MEC systems a reality. Finally, we give
+    hints to issues yet to be addressed in practice. By bringing a
+    better comprehension of MEC initiatives, we believe this survey will
+    help researchers and developers design their own MEC systems or
+    improve and simplify the usability of existing ones.
+  author:
+  - family: Cruz
+    given: Pedro
+  - family: Achir
+    given: Nadjib
+  - family: Viana
+    given: Aline Carneiro
+  container-title: ACM Comput. Surv.
+  doi: 10.1145/3529758
+  id: "DBLP:journals/csur/CruzAV23"
+  issue: 5
+  issued: 2023
+  page: "99:1-99:34"
+  title: "On the edge of the deployment: A survey on multi-access edge
+    computing"
+  title-short: On the edge of the deployment
+  type: article-journal
+  url: "https://doi.org/10.1145/3529758"
+  volume: 55
+- author:
+  - family: Patanè
+    given: Rosario
+  - family: Achir
+    given: Nadjib
+  - family: Araldo
+    given: Andrea
+  - family: Boukhatem
+    given: Lila
+  container-title: "[WCNC 2024 - IEEE Wireless Communications and
+    Networking Conference]{.nocase}"
+  id: "patane:hal-04393593"
+  issued: 2024-04
+  keyword: Cloud computing ; Edge computing ; Vehicular Cloud ; Task
+    offloading ; Edge Investment
+  publisher-place: Dubai, United Arab Emirates
+  title: "[Can vehicular cloud replace edge computing?]{.nocase}"
+  type: paper-conference
+  url: "https://hal.science/hal-04393593"
+- author:
+  - family: Muhlethaler
+    given: Paul
+  - family: Achir
+    given: Nadjib
+  container-title: 12th IFIP/IEEE international conference on
+    performance evaluation and modeling in wired and wireless networks,
+    PEMWN 2023, berlin, germany, september 27-29, 2023
+  doi: 10.23919/PEMWN58813.2023.10304925
+  id: "DBLP:conf/pemwn/MuhlethalerA23"
+  issued: 2023
+  page: 1-6
+  publisher: IEEE
+  title: Analyzing and optimizing extended-CAM service using simple
+    stochastic geometry model
+  type: paper-conference
+  url: "https://doi.org/10.23919/PEMWN58813.2023.10304925"
+- author:
+  - family: Esper
+    given: João Paulo
+  - family: Achir
+    given: Nadjib
+  - family: Cardoso
+    given: Kleber Vieira
+  - family: Almeida
+    given: Jussara M.
+  container-title: 34th IEEE annual international symposium on personal,
+    indoor and mobile radio communications PIMRC 2023, toronto, ON,
+    canada, september 5-8, 2023
+  doi: 10.1109/PIMRC56721.2023.10293816
+  id: "DBLP:conf/pimrc/EsperACA23"
+  issued: 2023
+  page: 1-6
+  publisher: IEEE
+  title: Impact of user privacy and mobility on edge offloading
+  type: paper-conference
+  url: "https://doi.org/10.1109/PIMRC56721.2023.10293816"
+- author:
+  - family: Mishra
+    given: Abhishek Kumar
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  container-title: 97th IEEE vehicular technology conference, VTC spring
+    2023, florence, italy, june 20-23, 2023
+  doi: 10.1109/VTC2023-SPRING57618.2023.10199706
+  id: "DBLP:conf/vtc/MishraVA23"
+  issued: 2023
+  page: 1-7
+  publisher: IEEE
+  title: Introducing benchmarks for evaluating user-privacy
+    vulnerability in WiFi
+  type: paper-conference
+  url: "https://doi.org/10.1109/VTC2023-Spring57618.2023.10199706"
+- author:
+  - family: Mishra
+    given: Abhishek Kumar
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  container-title: IEEE wireless communications and networking
+    conference, WCNC 2023, glasgow, UK, march 26-29, 2023
+  doi: 10.1109/WCNC55385.2023.10118635
+  id: "DBLP:conf/wcnc/MishraVA23"
+  issued: 2023
+  page: 1-6
+  publisher: IEEE
+  title: Do WiFi probe-requests reveal your trajectory?
+  type: paper-conference
+  url: "https://doi.org/10.1109/WCNC55385.2023.10118635"
+- author:
+  - family: Esper
+    given: João Paulo
+  - family: Achir
+    given: Nadjib
+  - family: Cardoso
+    given: Kleber Vieira
+  - family: Almeida
+    given: Jussara M.
+  container-title: CoRR
+  doi: 10.48550/ARXIV.2306.15740
+  id: "DBLP:journals/corr/abs-2306-15740"
+  issued: 2023
+  title: Impact of user privacy and mobility on edge offloading
+  type: article-journal
+  url: "https://doi.org/10.48550/arXiv.2306.15740"
+  volume: abs/2306.15740
+- author:
+  - family: Tazibt
+    given: Celia Yasmine
+  - family: Achir
+    given: Nadjib
+  - family: Djamah
+    given: Tounsia
+  container-title: Int. J. Sens. Networks
+  doi: 10.1504/IJSNET.2022.121702
+  id: "DBLP:journals/ijsnet/TazibtAD22"
+  issue: 3
+  issued: 2022
+  page: 177-190
+  title: Online drone-based data gathering strategies for ground sensor
+    networks
+  type: article-journal
+  url: "https://doi.org/10.1504/IJSNET.2022.121702"
+  volume: 38
+- author:
+  - dropping-particle: de
+    family: Mello Silva
+    given: Fernando Dias
+  - family: Mishra
+    given: Abhishek Kumar
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  - family: Fladenmuller
+    given: Anne
+  - family: Costa
+    given: Luı́s Henrique M. K.
+  container-title: 6th cyber security in networking conference, CSNet
+    2022, rio de janeiro, brazil, october 24-26, 2022
+  doi: 10.1109/CSNET56116.2022.9955615
+  id: "DBLP:conf/csnet/SilvaMVAFC22"
+  issued: 2022
+  page: 1-7
+  publisher: IEEE
+  title: Performance analysis of a privacy-preserving frame sniffer on a
+    raspberry pi
+  type: paper-conference
+  url: "https://doi.org/10.1109/CSNet56116.2022.9955615"
+- author:
+  - family: Jouans
+    given: Loı̈c
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  - family: Fladenmuller
+    given: Anne
+  container-title: 18th IEEE annual consumer communications & networking
+    conference, CCNC 2021, las vegas, NV, USA, january 9-12, 2021
+  doi: 10.1109/CCNC49032.2021.9369628
+  id: "DBLP:conf/ccnc/JouansVAF21"
+  issued: 2021
+  page: 1-6
+  publisher: IEEE
+  title: Associating the randomized bluetooth MAC addresses of a device
+  type: paper-conference
+  url: "https://doi.org/10.1109/CCNC49032.2021.9369628"
+- author:
+  - family: Faiz
+    given: Sanaullah
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: 22nd IEEE international conference on high
+    performance switching and routing, HPSR 2021, paris, france, june
+    7-10, 2021
+  doi: 10.1109/HPSR52026.2021.9481799
+  id: "DBLP:conf/hpsr/FaizAB21"
+  issued: 2021
+  page: 1-6
+  publisher: IEEE
+  title: Increasing vehicles perception using cooperative relaying and
+    priority-based beaconing
+  type: paper-conference
+  url: "https://doi.org/10.1109/HPSR52026.2021.9481799"
+- author:
+  - family: Mishra
+    given: Abhishek Kumar
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  - family: Palamidessi
+    given: Catuscia
+  container-title: 46th IEEE conference on local computer networks, LCN
+    2021, edmonton, AB, canada, october 4-7, 2021
+  doi: 10.1109/LCN52139.2021.9524956
+  id: "DBLP:conf/lcn/MishraVAP21"
+  issued: 2021
+  page: 649-652
+  publisher: IEEE
+  title: Public wireless packets anonymously hurt you
+  type: paper-conference
+  url: "https://doi.org/10.1109/LCN52139.2021.9524956"
+- author:
+  - family: Seifeddine
+    given: Wassim
+  - family: Adjih
+    given: Cédric
+  - family: Achir
+    given: Nadjib
+  container-title: 10th IFIP international conference on performance
+    evaluation and modeling in wireless and wired networks, PEMWN 2021,
+    waterloo, ON, canada, november 23-25, 2021
+  doi: 10.23919/PEMWN53042.2021.9664700
+  id: "DBLP:conf/pemwn/SeifeddineAA21"
+  issued: 2021
+  page: 1-6
+  publisher: IEEE
+  title: Dynamic hierarchical neural network offloading in IoT edge
+    networks
+  type: paper-conference
+  url: "https://doi.org/10.23919/PEMWN53042.2021.9664700"
+

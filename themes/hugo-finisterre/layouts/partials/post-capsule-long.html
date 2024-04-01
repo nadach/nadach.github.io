@@ -1,0 +1,23 @@
+<div class="post-metadata">
+  <span class="post-date">
+  {{ partial "post_fmt/date" (dict "dot" .) | chomp }}
+  {{- partial "post_fmt/author" (dict "dot" . "pre_comma" 1 "post_comma" 1 "force" 1) | chomp -}}
+  <span><a href="{{ .RelPermalink }}" target="_blank">
+  {{- if not .Truncated}}&rarr; Read more{{- end -}}
+  </a></span>
+  </span>
+</div>
+{{- if or (isset .Params "summary") .Truncated }}
+  {{ if isset .Params "abstract" -}}
+    {{- .Params.abstract | markdownify | safeHTML -}}
+  {{- else if isset .Params "summary" -}}
+    {{- .Summary -}}
+  {{- else -}}
+    {{- .Summary | replaceRE "<p></p>" "" | chomp | safeHTML -}}
+  {{- end }}
+  <p class="text-right"><a href="{{ .RelPermalink }}">Read More…</a></p>
+{{- else }}
+  <div itemprop="articleBody">
+  {{ .Content }}
+  </div>
+{{ end -}}

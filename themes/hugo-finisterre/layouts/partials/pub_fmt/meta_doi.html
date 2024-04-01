@@ -1,0 +1,4 @@
+{{- $ := .dot -}}
+{{- if isset $.Params "doi" }}
+<meta itemprop="sameAs" content="https://doi.org/{{ $.Params.doi | safeHTML }}"/>
+{{ end -}}

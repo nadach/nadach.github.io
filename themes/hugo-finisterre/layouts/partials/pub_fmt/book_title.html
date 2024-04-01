@@ -1,0 +1,2 @@
+{{- $ := .dot -}}
+<span class="pub-book-title" itemprop="name">{{- $.Params.title | title | markdownify | replaceRE "\\^([^\\^]+)\\^" "<sup>$1</sup>" | replaceRE "\\$\\\\Ce" "$\\ce" | safeHTML }}</span>

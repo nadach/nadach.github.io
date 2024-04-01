@@ -1,0 +1,37 @@
+# Local project files
+*.Rproj
+.Rproj.user
+.RData
+.Rhistory
+.DS_Store
+
+# Local batch scripts
+static/files/cv/copy_cv*
+
+# Python files
+.spyproject
+__pycache__
+*.pyc
+
+# Auxiliary files
+*.bak
+*.blg
+*.log
+*.sav
+
+
+# Blogdown stuff
+/blogdown/
+
+# Hugo stuff
+.hugo_build.lock
+/public/
+
+# Local Netlify stuff
+.netlify/
+
+
+# Diffs and patches
+*.patch
+*.diff
+

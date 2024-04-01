@@ -1,0 +1,3 @@
+#! /bin/bash
+hugo --destination public --forceSyncStatic --cleanDestinationDir --ignoreCache --watch server --disableFastRender --port 8000 $*
+
