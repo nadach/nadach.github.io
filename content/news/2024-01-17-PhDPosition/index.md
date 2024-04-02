@@ -15,14 +15,6 @@ tags: [PostDoc Position]
 
 <!--more-->
 
-# Context
-
-This PostDos is funded by the challenge Inria-Nokia Bell Labs: LearnNet (Learning Networks)
-
-# Assignment
-
-## Context
-
 In this postdoc, we will study the problem of AI model placement in an IDN. This is a challenging optimization problem that involves a non-trivial tradeoff between model effectiveness, inference latency, and resource availability while also dealing with the natural dynamicity of the network, e.g., due to users’ request process or changes in available computing and communication resources.
 
 We will also consider other metrics, such as energy consumption, in the objective functions and networking constraints for systems where the network presents some inelasticity (see also [1]). We will leverage multi-objective optimization techniques (e.g., Pareto efficient solutions) and transfer learning techniques to adapt models across nodes with different levels of knowledge and resource availability. We will also rely on online learning approaches to achieve model placements with adversarial guarantees regarding regret.
@@ -34,6 +26,10 @@ This evaluation may also consider scenarios with significant heterogeneity of th
 ## Collaboration
 
 This postdoc will be recruited and hosted at Inria Saclay and supervised by Tribe (INRIA), Neo (INRIA), and AIRL (Nokia)
+
+## Context
+
+This PostDos is funded by the challenge Inria-Nokia Bell Labs: LearnNet (Learning Networks)
 
 ## References
 
