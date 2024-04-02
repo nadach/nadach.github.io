@@ -1,9 +1,7 @@
 ---
 title: PhD Position @TRiBE-INRIA
 pub_link: ""
-publication: "PhD Position - F/M Vehicle-and-mobile phone
-computing sharing as part of the edge-to-cloud
-continuum"
+publication: "PhD Position"
 publishdate: "2024-01-17"
 author: "Nadjib Achir"
 date: "2024-01-17"
@@ -14,6 +12,8 @@ categories:
 tags: [PhD Position]
 # draft: true
 ---
+
+> F/M Vehicle-and-mobile phone computing sharing as part of the edge-to-cloud continuum
 
 <!--more-->
 

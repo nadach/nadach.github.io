@@ -1,7 +1,7 @@
 ---
 title: PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA
 pub_link: ""
-publication: "Post-Doctoral - Research Visit F/M Model placement in inference delivery networks"
+publication: "Post-Doctoral Position"
 publishdate: "2024-02-14"
 author: "Nadjib Achir"
 date: "2024-02-14"
@@ -12,6 +12,8 @@ categories:
 tags: [PostDoc Position]
 # draft: true
 ---
+
+> Research Visit F/M Model placement in inference delivery networks.
 
 <!--more-->
 
