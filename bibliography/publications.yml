@@ -561,6 +561,155 @@ references:
   type: paper-conference
   url: https://doi.org/10.23919/SOFTCOM.2019.8903783
 - author:
+  - family: Kammoun
+    given: Amal
+  - family: Tabbane
+    given: Nabil
+  - family: Diaz
+    given: Gladys
+  - family: Dandoush
+    given: Abdulhalim
+  - family: Achir
+    given: Nadjib
+  container-title: 32nd IEEE international conference on advanced information networking
+    and applications, AINA 2018, krakow, poland, may 16-18, 2018
+  doi: 10.1109/AINA.2018.00065
+  editor:
+  - family: Barolli
+    given: Leonard
+  - family: Takizawa
+    given: Makoto
+  - family: Enokido
+    given: Tomoya
+  - family: Ogiela
+    given: Marek R.
+  - family: Ogiela
+    given: Lidia
+  - family: Javaid
+    given: Nadeem
+  id: DBLP:conf/aina/KammounTDDA18
+  issued: 2018
+  page: 386-392
+  publisher: IEEE Computer Society
+  title: End-to-end efficient heuristic algorithm for 5G network slicing
+  type: paper-conference
+  url: https://doi.org/10.1109/AINA.2018.00065
+- author:
+  - family: Kammoun
+    given: Amal
+  - family: Tabbane
+    given: Nabil
+  - family: Diaz
+    given: Gladys
+  - family: Achir
+    given: Nadjib
+  container-title: 6th international conference on multimedia computing and systems,
+    ICMCS 2018, rabat, morocco, may 10-12, 2018
+  doi: 10.1109/ICMCS.2018.8525945
+  editor:
+  - family: Hibaoui
+    given: Abdelaaziz El
+  - family: Essaaidi
+    given: Mohamed
+  - family: Zaz
+    given: Youssef
+  id: DBLP:conf/icmcs2/KammounTDA18
+  issued: 2018
+  page: 1-6
+  publisher: IEEE
+  title: Admission control algorithm for network slicing management in SDN-NFV environment
+  type: paper-conference
+  url: https://doi.org/10.1109/ICMCS.2018.8525945
+- author:
+  - family: Mazouzi
+    given: Houssemeddine
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: Proceedings of the 21st ACM international conference on modeling,
+    analysis and simulation of wireless and mobile systems, MSWiM 2018, montreal,
+    QC, canada, october 28 - november 02, 2018
+  doi: 10.1145/3242102.3242133
+  editor:
+  - family: Boukerche
+    given: Azzedine
+  - family: Kanhere
+    given: Salil S.
+  - family: Bellavista
+    given: Paolo
+  id: DBLP:conf/mswim/MazouziAB18
+  issued: 2018
+  page: 137-145
+  publisher: ACM
+  title: Maximizing mobiles energy saving through tasks optimal offloading placement
+    in two-tier cloud
+  type: paper-conference
+  url: https://doi.org/10.1145/3242102.3242133
+- author:
+  - family: Ingrachen
+    given: Sadia
+  - family: Achir
+    given: Nadjib
+  - family: "M\xFChlethaler"
+    given: Paul
+  - family: Djamah
+    given: Tounsia
+  - family: Berqia
+    given: Amine
+  container-title: 88th IEEE vehicular technology conference, VTC fall 2018, chicago,
+    IL, USA, august 27-30, 2018
+  doi: 10.1109/VTCFALL.2018.8690995
+  id: DBLP:conf/vtc/IngrachenAMDB18
+  issued: 2018
+  page: 1-5
+  publisher: IEEE
+  title: A collaborative environment perception approach for vehicular ad hoc networks
+  type: paper-conference
+  url: https://doi.org/10.1109/VTCFall.2018.8690995
+- author:
+  - family: Tazibt
+    given: Celia Yasmine
+  - family: Achir
+    given: Nadjib
+  - family: "M\xFChlethaler"
+    given: Paul
+  - family: Djamah
+    given: Tounsia
+  container-title: 88th IEEE vehicular technology conference, VTC fall 2018, chicago,
+    IL, USA, august 27-30, 2018
+  doi: 10.1109/VTCFALL.2018.8691007
+  id: DBLP:conf/vtc/TazibtAMD18
+  issued: 2018
+  page: 1-5
+  publisher: IEEE
+  title: UAV-based data gathering using an artificial potential fields approach
+  type: paper-conference
+  url: https://doi.org/10.1109/VTCFall.2018.8691007
+- author:
+  - family: Garraffa
+    given: Michele
+  - family: Bekhti
+    given: Mustapha
+  - family: "L\xE9tocart"
+    given: Lucas
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: 2018 IEEE wireless communications and networking conference, WCNC
+    2018, barcelona, spain, april 15-18, 2018
+  doi: 10.1109/WCNC.2018.8377391
+  id: DBLP:conf/wcnc/GarraffaBLAB18
+  issued: 2018
+  page: 1-6
+  publisher: IEEE
+  title: 'Drones path planning for WSN data gathering: A column generation heuristic
+    approach'
+  title-short: Drones path planning for WSN data gathering
+  type: paper-conference
+  url: https://doi.org/10.1109/WCNC.2018.8377391
+- author:
   - family: Bekhti
     given: Mustapha
   - family: Achir
@@ -581,3 +730,158 @@ references:
   title-short: Drone package delivery
   type: paper-conference
   volume: 3
+- author:
+  - family: Bouchaala
+    given: Younes
+  - family: "M\xFChlethaler"
+    given: Paul
+  - family: Shagdar
+    given: Oyunchimeg
+  - family: Achir
+    given: Nadjib
+  container-title: 14th IEEE annual consumer communications & networking conference,
+    CCNC 2017, las vegas, NV, USA, january 8-11, 2017
+  doi: 10.1109/CCNC.2017.7983122
+  id: DBLP:conf/ccnc/BouchaalaMSA17
+  issued: 2017
+  page: 293-298
+  publisher: IEEE
+  title: 'Optimized spatial CSMA for VANETs: A comparative study using a simple stochastic
+    model and simulation results'
+  title-short: Optimized spatial CSMA for VANETs
+  type: paper-conference
+  url: https://doi.org/10.1109/CCNC.2017.7983122
+- author:
+  - family: Bekhti
+    given: Mustapha
+  - family: Garraffa
+    given: Michele
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  - family: "L\xE9tocart"
+    given: Lucas
+  container-title: 13th international wireless communications and mobile computing
+    conference, IWCMC 2017, valencia, spain, june 26-30, 2017
+  doi: 10.1109/IWCMC.2017.7986423
+  id: DBLP:conf/iwcmc/BekhtiGABL17
+  issued: 2017
+  page: 1004-1009
+  publisher: IEEE
+  title: Assessment of multi-UAVs tracking for data gathering
+  type: paper-conference
+  url: https://doi.org/10.1109/IWCMC.2017.7986423
+- author:
+  - family: "M\xFChlethaler"
+    given: Paul
+  - family: Bouchaala
+    given: Younes
+  - family: Shagdar
+    given: Oyunchimeg
+  - family: Achir
+    given: Nadjib
+  container-title: International conference on performance evaluation and modeling
+    in wired and wireless networks, PEMWN 2017, paris, france, november 28-30, 2017
+  doi: 10.23919/PEMWN.2017.8308021
+  id: DBLP:conf/pemwn/MuhlethalerBSA17
+  issued: 2017
+  page: 1-7
+  publisher: IEEE
+  title: Evaluating the gain of directional antennas in linear VANETs using stochastic
+    geometry
+  type: paper-conference
+  url: https://doi.org/10.23919/PEMWN.2017.8308021
+- author:
+  - family: Tazibt
+    given: Celia Yasmine
+  - family: Bekhti
+    given: Mustapha
+  - family: Djamah
+    given: Tounsia
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: 2017 wireless days, porto, portugal, march 29-31, 2017
+  doi: 10.1109/WD.2017.7918154
+  editor:
+  - family: Ricardo
+    given: Manuel
+  - family: Campos
+    given: Rui
+  - family: Ruela
+    given: "Jos\xE9"
+  - family: Morla
+    given: Ricardo
+  - family: Teixeira
+    given: Filipe
+  - family: Pessoa
+    given: "Lu\u0131\u0301s M."
+  - family: Salgado
+    given: Henrique M.
+  id: DBLP:conf/wd/TazibtBDAB17
+  issued: 2017
+  page: 245-247
+  publisher: IEEE
+  title: Wireless sensor network clustering for UAV-based data gathering
+  type: paper-conference
+  url: https://doi.org/10.1109/WD.2017.7918154
+- author:
+  - family: Bouchaala
+    given: Younes
+  - family: "M\xFChlethaler"
+    given: Paul
+  - family: Achir
+    given: Nadjib
+  container-title: 2017 wireless days, porto, portugal, march 29-31, 2017
+  doi: 10.1109/WD.2017.7918156
+  editor:
+  - family: Ricardo
+    given: Manuel
+  - family: Campos
+    given: Rui
+  - family: Ruela
+    given: "Jos\xE9"
+  - family: Morla
+    given: Ricardo
+  - family: Teixeira
+    given: Filipe
+  - family: Pessoa
+    given: "Lu\u0131\u0301s M."
+  - family: Salgado
+    given: Henrique M.
+  id: DBLP:conf/wd/BouchaalaMA17
+  issued: 2017
+  page: 252-257
+  publisher: IEEE
+  title: 'Analysis of the IEEE 802.11 EDCF scheme for broadcast traffic: Application
+    for VANETs'
+  title-short: Analysis of the IEEE 802.11 EDCF scheme for broadcast traffic
+  type: paper-conference
+  url: https://doi.org/10.1109/WD.2017.7918156
+- author:
+  - family: Bekhti
+    given: Mustapha
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  collection-title: Lecture notes of the institute for computer sciences, social informatics
+    and telecommunications engineering
+  container-title: Wireless internet - 10th international conference, WiCON 2017,
+    tianjin, china, december 16-17, 2017, proceedings
+  doi: 10.1007/978-3-319-90802-1\\\_19
+  editor:
+  - family: Li
+    given: Cheng
+  - family: Mao
+    given: Shiwen
+  id: DBLP:conf/wicon/BekhtiAB17
+  issued: 2017
+  page: 221-231
+  publisher: Springer
+  title: Swarm of networked drones for video detection of intrusions
+  type: paper-conference
+  url: https://doi.org/10.1007/978-3-319-90802-1\\\_19
+  volume: 230
