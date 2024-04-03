@@ -1,5 +1,24 @@
 nocite: "[@*]"
 references:
+- author:
+  - family: Patanè
+    given: Rosario
+  - family: Achir
+    given: Nadjib
+  - family: Araldo
+    given: Andrea
+  - family: Boukhatem
+    given: Lila
+  container-title: "[WCNC 2024 - IEEE Wireless Communications and
+    Networking Conference]{.nocase}"
+  id: "patane:hal-04393593"
+  issued: 2024-04
+  keyword: Cloud computing ; Edge computing ; Vehicular Cloud ; Task
+    offloading ; Edge Investment
+  publisher-place: Dubai, United Arab Emirates
+  title: "[Can vehicular cloud replace edge computing?]{.nocase}"
+  type: paper-conference
+  url: "https://hal.science/hal-04393593"
 - abstract: Multi-Access Edge Computing (MEC) attracts much attention
     from the scientific community due to its scientific, technical, and
     commercial implications. In particular, the European
@@ -41,25 +60,6 @@ references:
   type: article-journal
   url: "https://doi.org/10.1145/3529758"
   volume: 55
-- author:
-  - family: Patanè
-    given: Rosario
-  - family: Achir
-    given: Nadjib
-  - family: Araldo
-    given: Andrea
-  - family: Boukhatem
-    given: Lila
-  container-title: "[WCNC 2024 - IEEE Wireless Communications and
-    Networking Conference]{.nocase}"
-  id: "patane:hal-04393593"
-  issued: 2024-04
-  keyword: Cloud computing ; Edge computing ; Vehicular Cloud ; Task
-    offloading ; Edge Investment
-  publisher-place: Dubai, United Arab Emirates
-  title: "[Can vehicular cloud replace edge computing?]{.nocase}"
-  type: paper-conference
-  url: "https://hal.science/hal-04393593"
 - author:
   - family: Muhlethaler
     given: Paul
@@ -268,4 +268,339 @@ references:
     networks
   type: paper-conference
   url: "https://doi.org/10.23919/PEMWN53042.2021.9664700"
+- author:
+  - family: Mishra
+    given: Abhishek Kumar
+  - family: Viana
+    given: Aline Carneiro
+  - family: Achir
+    given: Nadjib
+  container-title: CoRR
+  id: "DBLP:journals/corr/abs-2101-11728"
+  issued: 2021
+  title: "SimBle: Generating privacy preserving real-worldBLE traces
+    with ground truth"
+  title-short: SimBle
+  type: article-journal
+  url: "https://arxiv.org/abs/2101.11728"
+  volume: abs/2101.11728
+- author:
+  - family: Jin
+    given: Yong
+  - family: D'Agostino
+    given: Daniele
+  - family: Achir
+    given: Nadjib
+  - family: Nightingale
+    given: James
+  - family: Wang
+    given: Jiacun
+  container-title: Multim. Syst.
+  doi: 10.1007/S00530-019-00643-7
+  id: "DBLP:journals/mms/JinDANW20"
+  issue: 1
+  issued: 2020
+  page: 1-2
+  title: Special issue on multimedia fog/edge computing systems
+  type: article-journal
+  url: "https://doi.org/10.1007/s00530-019-00643-7"
+  volume: 26
+- author:
+  - family: Le
+    given: Hoan
+  - family: Boussetta
+    given: Khaled
+  - family: Achir
+    given: Nadjib
+  container-title: Global information infrastructure and networking
+    symposium, GIIS 2020, tunis, tunisia, october 28-30, 2020
+  doi: 10.1109/GIIS50753.2020.9248482
+  id: "DBLP:conf/giis/LeBA20"
+  issued: 2020
+  page: 1-6
+  publisher: IEEE
+  title: A unified and semantic data model for fog computing
+  type: paper-conference
+  url: "https://doi.org/10.1109/GIIS50753.2020.9248482"
+- author:
+  - family: Faiz
+    given: Sanaullah
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: "MobiArch@MobiCom 2020: Proceedings of the 15th
+    workshop on mobility in the evolving internet architecture, london,
+    united kingdom, september 21, 2020"
+  doi: 10.1145/3411043.3412504
+  id: "DBLP:conf/mobiarch/FaizAB20"
+  issued: 2020
+  page: 16-21
+  publisher: ACM
+  title: "On the benefits of increased vehicles perception to
+    cooperative communications: A performance evaluation study"
+  title-short: On the benefits of increased vehicles perception to
+    cooperative communications
+  type: paper-conference
+  url: "https://doi.org/10.1145/3411043.3412504"
+- author:
+  - family: Le
+    given: Hoan
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: 11th international conference on network of the
+    future, NoF 2020, bordeaux, france, october 12-14, 2020
+  doi: 10.1109/NOF50125.2020.9249177
+  editor:
+  - family: Chemouil
+    given: Prosper
+  - family: Krief
+    given: Francine
+  - family: Ahmed
+    given: Toufik
+  - family: Hoßfeld
+    given: Tobias
+  - family: Secci
+    given: Stefano
+  - family: Stanica
+    given: Razvan
+  id: "DBLP:conf/nof/LeAB20"
+  issued: 2020
+  page: 8-15
+  publisher: IEEE
+  title: Fog services provider architecture for IoT
+  type: paper-conference
+  url: "https://doi.org/10.1109/NoF50125.2020.9249177"
+- author:
+  - family: Mazouzi
+    given: Houssemeddine
+  - family: Boussetta
+    given: Khaled
+  - family: Achir
+    given: Nadjib
+  container-title: Comput. Commun.
+  doi: 10.1016/J.COMCOM.2019.05.017
+  id: "DBLP:journals/comcom/MazouziBA19"
+  issued: 2019
+  page: 132-148
+  title: "Maximizing mobiles energy saving through tasks optimal
+    offloading placement in two-tier cloud: A theoretical and an
+    experimental study"
+  title-short: Maximizing mobiles energy saving through tasks optimal
+    offloading placement in two-tier cloud
+  type: article-journal
+  url: "https://doi.org/10.1016/j.comcom.2019.05.017"
+  volume: 144
+- author:
+  - family: Jin
+    given: Yong
+  - family: Shen
+    given: Hang
+  - family: D'Agostino
+    given: Daniele
+  - family: Achir
+    given: Nadjib
+  - family: Nightingale
+    given: James
+  container-title: Peer-to-Peer Netw. Appl.
+  doi: 10.1007/S12083-019-00812-5
+  id: "DBLP:journals/ppna/JinSDAN19"
+  issue: 6
+  issued: 2019
+  page: 1477-1479
+  title: "Guest editorials: Special issue on fog/edge networking for
+    multimedia applications"
+  title-short: Guest editorials
+  type: article-journal
+  url: "https://doi.org/10.1007/s12083-019-00812-5"
+  volume: 12
+- author:
+  - family: Mazouzi
+    given: Houssemeddine
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: ACM Trans. Internet Techn.
+  doi: 10.1145/3241666
+  id: "DBLP:journals/toit/MazouziAB19"
+  issue: 2
+  issued: 2019
+  page: "24:1-24:24"
+  title: "DM2-ECOP: An efficient computation offloading policy for
+    multi-user multi-cloudlet mobile edge computing environment"
+  type: article-journal
+  url: "https://doi.org/10.1145/3241666"
+  volume: 19
+- author:
+  - family: Kammoun
+    given: Amal
+  - family: Tabbane
+    given: Nabil
+  - family: Diaz
+    given: Gladys
+  - family: Achir
+    given: Nadjib
+  - family: Dandoush
+    given: Abdulhalim
+  collection-title: Lecture notes in networks and systems
+  container-title: Advances on broad-band wireless computing,
+    communication and applications- proceedings of the 14th
+    international conference on broad-band wireless computing,
+    communication and applications, BWCCA 2019, antwerp, belgium,
+    november 7-9, 2019
+  doi: 10.1007/978-3-030-33506-9\\\_34
+  editor:
+  - family: Barolli
+    given: Leonard
+  - family: Hellinckx
+    given: Peter
+  - family: Enokido
+    given: Tomoya
+  id: "DBLP:conf/bwcca/KammounTDAD19"
+  issued: 2019
+  page: 386-397
+  publisher: Springer
+  title: Proactive network slices management algorithm based on fuzzy
+    logic system and support vector regression model
+  type: paper-conference
+  url: "https://doi.org/10.1007/978-3-030-33506-9\\\\\\_34"
+  volume: 97
+- author:
+  - family: Kammoun
+    given: Amal
+  - family: Tabbane
+    given: Nabil
+  - family: Diaz
+    given: Gladys
+  - family: Achir
+    given: Nadjib
+  - family: Dandoush
+    given: Abdulhalim
+  collection-title: Communications in computer and information science
+  container-title: Distributed computing for emerging smart networks -
+    first international workshop, DiCES-n 2019, hammamet, tunisia,
+    october 30, 2019, revised selected papers
+  doi: 10.1007/978-3-030-40131-3\\\_5
+  editor:
+  - family: Jemili
+    given: Imen
+  - family: Mosbah
+    given: Mohamed
+  id: "DBLP:conf/ictac/KammounTDAD19"
+  issued: 2019
+  page: 77-90
+  publisher: Springer
+  title: Inter-slice mobility management in the context of SDN/NFV
+    networks
+  type: paper-conference
+  url: "https://doi.org/10.1007/978-3-030-40131-3\\\\\\_5"
+  volume: 1130
+- author:
+  - family: Mazouzi
+    given: Houssemeddine
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: Proceedings of the 22nd international ACM conference
+    on modeling, analysis and simulation of wireless and mobile systems,
+    MSWiM 2019, miami beach, FL, USA, november 25-29, 2019
+  doi: 10.1145/3345768.3355926
+  editor:
+  - family: Loureiro
+    given: Antonio A. F.
+  - family: Kanhere
+    given: Salil S.
+  - family: Bellavista
+    given: Paolo
+  id: "DBLP:conf/mswim/MazouziAB19"
+  issued: 2019
+  page: 307-314
+  publisher: ACM
+  title: Elastic offloading of multitasking applications to mobile edge
+    computing
+  type: paper-conference
+  url: "https://doi.org/10.1145/3345768.3355926"
+- author:
+  - family: Le
+    given: Hoan
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  container-title: 10th international conference on networks of the
+    future, NoF 2019, rome, italy, october 1-3, 2019
+  doi: 10.1109/NOF47743.2019.9014960
+  editor:
+  - family: Cianfrani
+    given: Antonio
+  - family: Riggio
+    given: Roberto
+  - family: Steinert
+    given: Rebecca
+  - family: Idzikowski
+    given: Filip
+  id: "DBLP:conf/nof/LeAB19"
+  issued: 2019
+  page: 130-133
+  publisher: IEEE
+  title: Fog computing architecture with heterogeneous internet of
+    things technologies
+  type: paper-conference
+  url: "https://doi.org/10.1109/NoF47743.2019.9014960"
+- author:
+  - family: Kammoun
+    given: Amal
+  - family: Tabbane
+    given: Nabil
+  - family: Diaz
+    given: Gladys
+  - family: Achir
+    given: Nadjib
+  - family: Dandoush
+    given: Abdulhalim
+  container-title: 2019 international conference on software,
+    telecommunications and computer networks, SoftCOM 2019, split,
+    croatia, september 19-21, 2019
+  doi: 10.23919/SOFTCOM.2019.8903783
+  editor:
+  - family: Begusic
+    given: Dinko
+  - family: Rozic
+    given: Nikola
+  - family: Radic
+    given: Josko
+  - family: Saric
+    given: Matko
+  id: "DBLP:conf/softcom/KammounTDAD19"
+  issued: 2019
+  page: 1-6
+  publisher: IEEE
+  title: Dynamic handler framework for network slices management
+  type: paper-conference
+  url: "https://doi.org/10.23919/SOFTCOM.2019.8903783"
+- author:
+  - family: Bekhti
+    given: Mustapha
+  - family: Achir
+    given: Nadjib
+  - family: Boussetta
+    given: Khaled
+  - family: Abdennebi
+    given: Marwen
+  collection-number: 9
+  container-title: EAI Endorsed Transactions on Internet of Things
+  doi: 10.4108/eai.31-8-2017.153048
+  id: 10.4108/eai.31-8-2017.153048
+  issued: 2017-01
+  keyword: UAV, Tracking, WSN, SINR, RPR, Noise, heuristic
+  publisher: EAI
+  title: "Drone package delivery: A heuristic approach for UAVs path
+    planning and tracking"
+  title-short: Drone package delivery
+  type: paper-conference
+  volume: 3
 
