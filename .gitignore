@@ -35,3 +35,5 @@ __pycache__
 *.patch
 *.diff
 
+# notosync
+/bibliography/notosync/*
