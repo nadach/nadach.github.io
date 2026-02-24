@@ -97,7 +97,7 @@ xHTML = false
 AuthorName = "Nadjib Achir"
 bio_name = "Nadjib Achir"
 cv_file = "CV_Nadjib_Achir.pdf"
-organization = "University Sorbonne Paris Nord & INRIA"
+organization = "INRIA"
 mathjax = true
 mhchem = true
 avatar = "avatar.jpg"
@@ -110,11 +110,11 @@ news_count = 2
 news_current_months = 12
 news_post_count = 2
 address = [
-  "- <a href=\"https://www.univ-spn.fr/\">University Sorbonne Paris Nord</a>,<br/>",
-  "99 Avenue Jean-Baptiste Clément,<br/>",
-  "93430 ",
-  "Villetaneuse,<br/>",
-  "France<br/>",
+  # "- <a href=\"https://www.univ-spn.fr/\">University Sorbonne Paris Nord</a>,<br/>",
+  # "99 Avenue Jean-Baptiste Clément,<br/>",
+  # "93430 ",
+  # "Villetaneuse,<br/>",
+  # "France<br/>",
   "- <a href=\"https://team.inria.fr/tribe/\"> TRiBE research team</a>,<br/>",
   "<a href=\"https://www.inria.fr\">Inria Saclay - Ile de France</a><br/>",
   "1 rue Honore d'Estienne d'Orves,<br/>",
@@ -138,13 +138,13 @@ icon_weight = "s"
 link = "mailto:nadjib.achir@inria.fr"
 text = "nadjib.achir@inria.fr"
 
-[params.social.email2]
-priority = 1
-icon = "envelope"
-icon_pack = "fa"
-icon_weight = "s"
-link = "mailto:nadjib.achir@univ-paris13.fr"
-text = "nadjib.achir@univ-paris13.fr"
+# [params.social.email2]
+# priority = 1
+# icon = "envelope"
+# icon_pack = "fa"
+# icon_weight = "s"
+# link = "mailto:nadjib.achir@univ-paris13.fr"
+# text = "nadjib.achir@univ-paris13.fr"
 
 [params.social.orcid]
 priority = 7
