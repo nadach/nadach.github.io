@@ -42,7 +42,7 @@ I was an **Associate Professor (HDR)** at [Université Sorbonne Paris Nord](http
 
 My recent research work focuses on two complementary directions: **(i) collecting and analyzing mobility data**, especially through measurements enabled by wireless networks **(ii) resource allocation and computation offloading at the edge**, to support ultra-responsive applications with strong latency and compute constraints. **(iii) Edge AI**, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources.
 
-## Contact info
+## Address
 
 Inria Saclay\
 Batiment Turing,\ 
