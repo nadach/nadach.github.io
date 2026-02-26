@@ -49,11 +49,11 @@
     "text": "I am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
   },
   {
-    "objectID": "index.html#contact-info",
-    "href": "index.html#contact-info",
+    "objectID": "index.html#address",
+    "href": "index.html#address",
     "title": "Nadjib Achir",
-    "section": "Contact info",
-    "text": "Contact info\nInria Saclay\nBatiment Turing,  1 Rue Honoré d’Estienne d’Orves,\n91120 Palaiseau, France"
+    "section": "Address",
+    "text": "Address\nInria Saclay\nBatiment Turing,  1 Rue Honoré d’Estienne d’Orves,\n91120 Palaiseau, France"
   },
   {
     "objectID": "index.html#news",
