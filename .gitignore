@@ -1,39 +1,40 @@
-# Local project files
-*.Rproj
-.Rproj.user
-.RData
-.Rhistory
+# -------------------------
+# Quarto
+# -------------------------
+/.quarto/
+
+# If you ever see _site/ created locally (e.g., older configs), ignore it
+/_site/
+
+# IMPORTANT for Option A:
+# Do NOT ignore /docs/ (this is your published site output)
+
+# -------------------------
+# OS / Editor clutter
+# -------------------------
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
 
-# Local batch scripts
-static/files/cv/copy_cv*
-
-# Python files
-.spyproject
-__pycache__
+# -------------------------
+# Python (if you use it in Quarto)
+# -------------------------
+__pycache__/
 *.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
 
-# Auxiliary files
-*.bak
-*.blg
+# -------------------------
+# R (only if you use R / RStudio)
+# -------------------------
+.Rhistory
+.Rproj.user/
+
+# -------------------------
+# MACOS
+# -------------------------
+.DS_Store
 *.log
-*.sav
-
-
-# Blogdown stuff
-/blogdown/
-
-# Hugo stuff
-.hugo_build.lock
-/public/
-
-# Local Netlify stuff
-.netlify/
-
-
-# Diffs and patches
-*.patch
-*.diff
-
-# notosync
-/bibliography/notosync/*

@@ -1,0 +1,13 @@
+.pubtype{
+  display:inline-block;
+  padding:0.08em 0.5em;
+  border-radius:0.6em;
+  font-size:0.75em;
+  font-weight:700;
+  margin-right:0.6em;
+  line-height:1.2;
+}
+
+.pubtype.journal { background:#ffe1e1; color:#a40000; border:1px solid #ffb3b3; }
+.pubtype.conf    { background:#e1ecff; color:#003a8c; border:1px solid #b3ccff; }
+.pubtype.report  { background:#e8ffe8; color:#145214; border:1px solid #b8f0b8; }

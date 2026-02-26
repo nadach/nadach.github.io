@@ -1,4 +1,0 @@
-{{- $ := .dot -}}
-{{- if (isset $.Params "number") | and (not (eq $.Params.number "")) -}}
-<meta name="citation_patent_number" content="US{{ $.Params.patent_num | htmlEscape }}">
-{{ end -}}

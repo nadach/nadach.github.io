@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "news/posdoc-nokia-2026/index.html",
+    "href": "news/posdoc-nokia-2026/index.html",
+    "title": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA",
+    "section": "",
+    "text": "In this postdoc, we will study the problem of AI model placement in an IDN. This is a challenging optimization problem that involves a non-trivial tradeoff between model effectiveness, inference latency, and resource availability while also dealing with the natural dynamicity of the network, e.g., due to users’ request process or changes in available computing and communication resources.\nWe will also consider other metrics, such as energy consumption, in the objective functions and networking constraints for systems where the network presents some inelasticity (see also [1]). We will leverage multi-objective optimization techniques (e.g., Pareto efficient solutions) and transfer learning techniques to adapt models across nodes with different levels of knowledge and resource availability. We will also rely on online learning approaches to achieve model placements with adversarial guarantees regarding regret.\nIn comparison to our preliminary work in [2] or [3], we will allow models to be split across multiple nodes [4,5,6]. In particular, we aim to compare specific model splitting techniques, with or without the insertion of bottlenecks [7,8] (reference [8] is also the result of NEO-AIRL cooperation), in terms of performance metrics like inference delay and network load. We will evaluate different methodologies to estimate online the quality of an inference [9].\nThis evaluation may also consider scenarios with significant heterogeneity of the nodes, such as in the scenario of embedded Edge AI or even more with TinyML (resources possibly lower by orders of magnitude but possibly a massive number of devices)."
+  },
+  {
+    "objectID": "news/posdoc-nokia-2026/index.html#description",
+    "href": "news/posdoc-nokia-2026/index.html#description",
+    "title": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA",
+    "section": "",
+    "text": "In this postdoc, we will study the problem of AI model placement in an IDN. This is a challenging optimization problem that involves a non-trivial tradeoff between model effectiveness, inference latency, and resource availability while also dealing with the natural dynamicity of the network, e.g., due to users’ request process or changes in available computing and communication resources.\nWe will also consider other metrics, such as energy consumption, in the objective functions and networking constraints for systems where the network presents some inelasticity (see also [1]). We will leverage multi-objective optimization techniques (e.g., Pareto efficient solutions) and transfer learning techniques to adapt models across nodes with different levels of knowledge and resource availability. We will also rely on online learning approaches to achieve model placements with adversarial guarantees regarding regret.\nIn comparison to our preliminary work in [2] or [3], we will allow models to be split across multiple nodes [4,5,6]. In particular, we aim to compare specific model splitting techniques, with or without the insertion of bottlenecks [7,8] (reference [8] is also the result of NEO-AIRL cooperation), in terms of performance metrics like inference delay and network load. We will evaluate different methodologies to estimate online the quality of an inference [9].\nThis evaluation may also consider scenarios with significant heterogeneity of the nodes, such as in the scenario of embedded Edge AI or even more with TinyML (resources possibly lower by orders of magnitude but possibly a massive number of devices)."
+  },
+  {
+    "objectID": "news/posdoc-nokia-2026/index.html#collaboration",
+    "href": "news/posdoc-nokia-2026/index.html#collaboration",
+    "title": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA",
+    "section": "Collaboration",
+    "text": "Collaboration\nThis postdoc will be recruited and hosted at Inria Saclay and supervised by Tribe (INRIA), Neo (INRIA), and AIRL (Nokia)"
+  },
+  {
+    "objectID": "news/posdoc-nokia-2026/index.html#context",
+    "href": "news/posdoc-nokia-2026/index.html#context",
+    "title": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA",
+    "section": "Context",
+    "text": "Context\nThis PostDos is funded by the challenge Inria-Nokia Bell Labs: LearnNet (Learning Networks)"
+  },
+  {
+    "objectID": "news/posdoc-nokia-2026/index.html#references",
+    "href": "news/posdoc-nokia-2026/index.html#references",
+    "title": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA",
+    "section": "References",
+    "text": "References\n[1] Kinda Khawam et al. “Edge Learning as a Hedonic Game in LoRaWAN”. ICC 2023 - IEEE International Conference on Communications. 2023.\n[2] Tareq Si Salem et al. “Towards inference delivery networks: distributing machine learning with optimality guarantees.” In: 19th Mediterranean Communication and Computer Networking Conference (MEDCOMNET 2021). Ibiza (virtual), Spain: IEEE, June 2021, pp. 1–8.\n[3] Wassim Seifeddine, Cédric Adjih, and Nadjib Achir. “Dynamic Hierarchical Neural Network Offloading in IoT Edge Networks.” In: PEMWN 2021 - 10th IFIP International Conference on Performance Evaluation and Modeling in Wireless and Wired Networks. Ottawa / Virtual, Canada: IEEE, Nov. 2021, pp. 1–6.\n[4] Surat Teerapittayanon, Bradley McDanel, and Hsiang-Tsung Kung. “Branchynet: Fast inference via early exiting from deep neural networks”. In: 2016 23rd International Conference on Pattern Recognition (ICPR). IEEE, 2016, pp. 2464-2469\n[5] S. Teerapittayanon, B. McDanel, and H. T. Kung. “Distributed Deep Neural Networks Over the Cloud, the Edge and End Devices”. In: 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS). ISSN: 1063-6927. June 2017, pp. 328–339.\n[6] Yoshitomo Matsubara, Marco Levorato, and Francesco Restuccia. “Split Computing and Early Exiting for Deep Learning Applications: Survey and Research Challenges”. In: ACM Computing Surveys 55.5 (Dec. 2022), 90:1–90:30. issn:0360-0300.\n[7] Yoshitomo Matsubara et al. “BottleFit: Learning Compressed Representations in Deep Neural Networks for Effective and Efficient Split Computing”. English. In: IEEE Computer Society, June 2022, pp. 337–346. isbn: 978-1-66540-876-9.\n[8] Gabriele Castellano et al. “Regularized Bottleneck with Early Labeling”. In: ITC 2022 - 34th International Teletraffic Congress. Shenzhen, China, Sept. 2022.\n[9] Ira Cohen and Moises Goldszmidt. “Properties and benefits of calibrated classifiers”. In: European Conference on Principles of Data Mining and Knowledge Discovery. Springer, 2004, pp. 125–136."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nadjib Achir",
+    "section": "",
+    "text": "I am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Nadjib Achir",
+    "section": "",
+    "text": "I am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
+  },
+  {
+    "objectID": "index.html#contact-info",
+    "href": "index.html#contact-info",
+    "title": "Nadjib Achir",
+    "section": "Contact info",
+    "text": "Contact info\nInria Saclay\nBatiment Turing,  1 Rue Honoré d’Estienne d’Orves,\n91120 Palaiseau, France"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Nadjib Achir",
+    "section": "News",
+    "text": "News\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 26, 2026\n\n\nPostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA\n\n\nNadjib Achir\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "List of the Publications",
+    "section": "",
+    "text": "Journal Vehicular Cloud Computing: A cost-effective alternative to Edge Computing in 5G networks. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. Comput. Networks, 2025. doi\n\n\n\n\n\nConference The Silent Signature: Behavior-Based User Exposure in Mobility Data. L. G. S. F'elix, A. J. Kouam, A. C. Viana, N. Achir, J. M. Almeida. 26th IEEE International Conference on Mobile Data Management, MDM 2025, Irvine, CA, USA, June 2-5, 2025, 2025. doi\nConference MITIK Toolkit: A Privacy-Compliant Passive Collection of WiFi Probe Request Datasets. F. M. Ortiz, G. Farhi-Rivasseau, N. Achir, A. C. Viana. Proceedings of the ACM SIGCOMM 2025 Posters and Demos, ACM SIGCOMM Posters and Demos 2025, Coimbra, Portugal, September 8-11, 2025, 2025. doi\nConference Enhancing Split ViT Inference Through Sparsity-Driven Compression. A. Dhaouadi, N. Achir, C. Adjih. 101st IEEE Vehicular Technology Conference, VTC Spring 2025, Oslo, Norway, June 17-20, 2025, 2025. doi\n\n\n\n\n\nReport Vehicular Cloud Computing: A cost-effective alternative to Edge Computing in 5G networks. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. CoRR, 2025. pdf\nReport Can vehicular cloud replace edge computing?. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. CoRR, 2025. pdf\nReport BUBBLE-BLUE a multihop private network based on Bluetooth. N. Achir, P. Jacquet. CoRR, 2025. pdf"
+  },
+  {
+    "objectID": "publications/index.html#section",
+    "href": "publications/index.html#section",
+    "title": "List of the Publications",
+    "section": "",
+    "text": "Journal Vehicular Cloud Computing: A cost-effective alternative to Edge Computing in 5G networks. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. Comput. Networks, 2025. doi\n\n\n\n\n\nConference The Silent Signature: Behavior-Based User Exposure in Mobility Data. L. G. S. F'elix, A. J. Kouam, A. C. Viana, N. Achir, J. M. Almeida. 26th IEEE International Conference on Mobile Data Management, MDM 2025, Irvine, CA, USA, June 2-5, 2025, 2025. doi\nConference MITIK Toolkit: A Privacy-Compliant Passive Collection of WiFi Probe Request Datasets. F. M. Ortiz, G. Farhi-Rivasseau, N. Achir, A. C. Viana. Proceedings of the ACM SIGCOMM 2025 Posters and Demos, ACM SIGCOMM Posters and Demos 2025, Coimbra, Portugal, September 8-11, 2025, 2025. doi\nConference Enhancing Split ViT Inference Through Sparsity-Driven Compression. A. Dhaouadi, N. Achir, C. Adjih. 101st IEEE Vehicular Technology Conference, VTC Spring 2025, Oslo, Norway, June 17-20, 2025, 2025. doi\n\n\n\n\n\nReport Vehicular Cloud Computing: A cost-effective alternative to Edge Computing in 5G networks. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. CoRR, 2025. pdf\nReport Can vehicular cloud replace edge computing?. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. CoRR, 2025. pdf\nReport BUBBLE-BLUE a multihop private network based on Bluetooth. N. Achir, P. Jacquet. CoRR, 2025. pdf"
+  },
+  {
+    "objectID": "publications/index.html#section-1",
+    "href": "publications/index.html#section-1",
+    "title": "List of the Publications",
+    "section": "2024",
+    "text": "2024\n\nJournal articles\n\nJournal Bleach: From WiFi probe-request signatures to MAC association. A. K. Mishra, A. C. Viana, N. Achir. Ad Hoc Networks, 2024. doi\n\n\n\nConference & workshop papers\n\nConference Can vehicular cloud replace edge computing?. R. Patan`e, N. Achir, A. Araldo, L. Boukhatem. WCNC 2024 - IEEE Wireless Communications and Networking Conference, 2024. pdf\nConference AutoMHS-GPT: Automated Model and Hyperparameter Selection with Generative Pre-Trained Model. L. A. C. de Souza, M. Sammarco, N. Achir, M. E. M. Campista, L. H. M. K. Costa. 13th IEEE International Conference on Cloud Networking, CloudNet 2024, Rio de Janeiro, Brazil, November 27-29, 2024, 2024. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-2",
+    "href": "publications/index.html#section-2",
+    "title": "List of the Publications",
+    "section": "2023",
+    "text": "2023\n\nJournal articles\n\nJournal On the Edge of the Deployment: A Survey on Multi-access Edge Computing. P. Cruz, N. Achir, A. C. Viana. ACM Comput. Surv., 2023. doi\n\n\n\nConference & workshop papers\n\nConference Introducing benchmarks for evaluating user-privacy vulnerability in WiFi. A. K. Mishra, A. C. Viana, N. Achir. 97th IEEE Vehicular Technology Conference, VTC Spring 2023, Florence, Italy, June 20-23, 2023, 2023. doi\nConference Impact of User Privacy and Mobility on Edge Offloading. J. P. Esper, N. Achir, K. V. Cardoso, J. M. Almeida. 34th IEEE Annual International Symposium on Personal, Indoor and Mobile Radio Communications PIMRC 2023, Toronto, ON, Canada, September 5-8, 2023, 2023. doi\nConference Do WiFi Probe-Requests Reveal Your Trajectory?. A. K. Mishra, A. C. Viana, N. Achir. IEEE Wireless Communications and Networking Conference, WCNC 2023, Glasgow, UK, March 26-29, 2023, 2023. doi\nConference Analyzing and Optimizing Extended-CAM Service Using Simple Stochastic Geometry Model. P. Muhlethaler, N. Achir. 12th IFIP/IEEE International Conference on Performance Evaluation and Modeling in Wired and Wireless Networks, PEMWN 2023, Berlin, Germany, September 27-29, 2023, 2023. doi\n\n\n\nTechnical reports\n\nReport Impact of User Privacy and Mobility on Edge Offloading. J. P. Esper, N. Achir, K. V. Cardoso, J. M. Almeida. CoRR, 2023. pdf"
+  },
+  {
+    "objectID": "publications/index.html#section-3",
+    "href": "publications/index.html#section-3",
+    "title": "List of the Publications",
+    "section": "2022",
+    "text": "2022\n\nJournal articles\n\nJournal Online drone-based data gathering strategies for ground sensor networks. C. Y. Tazibt, N. Achir, T. Djamah. Int. J. Sens. Networks, 2022. doi\n\n\n\nConference & workshop papers\n\nConference Performance Analysis of a Privacy-Preserving Frame Sniffer on a Raspberry Pi. F. D. D. M. Silva, A. K. Mishra, A. C. Viana, N. Achir, A. Fladenmuller, L. H. M. K. Costa. 6th Cyber Security in Networking Conference, CSNet 2022, Rio de Janeiro, Brazil, October 24-26, 2022, 2022. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-4",
+    "href": "publications/index.html#section-4",
+    "title": "List of the Publications",
+    "section": "2021",
+    "text": "2021\n\nConference & workshop papers\n\nConference Public Wireless Packets Anonymously Hurt You. A. K. Mishra, A. C. Viana, N. Achir, C. Palamidessi. 46th IEEE Conference on Local Computer Networks, LCN 2021, Edmonton, AB, Canada, October 4-7, 2021, 2021. doi\nConference Increasing vehicles perception using cooperative relaying and priority-based beaconing. S. Faiz, N. Achir, K. Boussetta. 22nd IEEE International Conference on High Performance Switching and Routing, HPSR 2021, Paris, France, June 7-10, 2021, 2021. doi\nConference Dynamic Hierarchical Neural Network Offloading in IoT Edge Networks. W. Seifeddine, C. Adjih, N. Achir. 10th IFIP International Conference on Performance Evaluation and Modeling in Wireless and Wired Networks, PEMWN 2021, Waterloo, ON, Canada, November 23-25, 2021, 2021. doi\nConference Associating the Randomized Bluetooth MAC Addresses of a Device. L. Jouans, A. C. Viana, N. Achir, A. Fladenmuller. 18th IEEE Annual Consumer Communications & Networking Conference, CCNC 2021, Las Vegas, NV, USA, January 9-12, 2021, 2021. doi\n\n\n\nTechnical reports\n\nReport SimBle: Generating privacy preserving real-worldBLE traces with ground truth. A. K. Mishra, A. C. Viana, N. Achir. CoRR, 2021. pdf"
+  },
+  {
+    "objectID": "publications/index.html#section-5",
+    "href": "publications/index.html#section-5",
+    "title": "List of the Publications",
+    "section": "2020",
+    "text": "2020\n\nJournal articles\n\nJournal Special issue on multimedia fog/edge computing systems. Y. Jin, D. D’Agostino, N. Achir, J. Nightingale, J. Wang. Multim. Syst., 2020. doi\n\n\n\nConference & workshop papers\n\nConference On the benefits of increased vehicles perception to cooperative communications: a performance evaluation study. S. Faiz, N. Achir, K. Boussetta. MobiArch@MobiCom 2020: Proceedings of the 15th Workshop on Mobility in the Evolving Internet Architecture, London, United Kingdom, September 21, 2020, 2020. doi\nConference Fog Services Provider Architecture for IoT. H. Le, N. Achir, K. Boussetta. 11th International Conference on Network of the Future, NoF 2020, Bordeaux, France, October 12-14, 2020, 2020. doi\nConference A unified and semantic data model for fog computing. H. Le, K. Boussetta, N. Achir. Global Information Infrastructure and Networking Symposium, GIIS 2020, Tunis, Tunisia, October 28-30, 2020, 2020. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-6",
+    "href": "publications/index.html#section-6",
+    "title": "List of the Publications",
+    "section": "2019",
+    "text": "2019\n\nJournal articles\n\nJournal Maximizing mobiles energy saving through tasks optimal offloading placement in two-tier cloud: A theoretical and an experimental study. H. Mazouzi, K. Boussetta, N. Achir. Comput. Commun., 2019. doi\nJournal Guest editorials: Special issue on fog/edge networking for multimedia applications. Y. Jin, H. Shen, D. D’Agostino, N. Achir, J. Nightingale. Peer-to-Peer Netw. Appl., 2019. doi\nJournal DM2-ECOP: An Efficient Computation Offloading Policy for Multi-user Multi-cloudlet Mobile Edge Computing Environment. H. Mazouzi, N. Achir, K. Boussetta. ACM Trans. Internet Techn., 2019. doi\n\n\n\nConference & workshop papers\n\nConference Proactive Network Slices Management Algorithm Based on Fuzzy Logic System and Support Vector Regression Model. A. Kammoun, N. Tabbane, G. Diaz, N. Achir, A. Dandoush. Advances on Broad-Band Wireless Computing, Communication and Applications- Proceedings of the 14th International Conference on Broad-Band Wireless Computing, Communication and Applications, BWCCA 2019, Antwerp, Belgium, November 7-9, 2019, 2019. doi\nConference Inter-slice Mobility Management in the Context of SDN/NFV Networks. A. Kammoun, N. Tabbane, G. Diaz, N. Achir, A. Dandoush. Distributed Computing for Emerging Smart Networks - First International Workshop, DiCES-N 2019, Hammamet, Tunisia, October 30, 2019, Revised Selected Papers, 2019. doi\nConference Fog computing architecture with heterogeneous Internet of Things technologies. H. Le, N. Achir, K. Boussetta. 10th International Conference on Networks of the Future, NoF 2019, Rome, Italy, October 1-3, 2019, 2019. doi\nConference Elastic Offloading of Multitasking Applications to Mobile Edge Computing. H. Mazouzi, N. Achir, K. Boussetta. Proceedings of the 22nd International ACM Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems, MSWiM 2019, Miami Beach, FL, USA, November 25-29, 2019, 2019. doi\nConference Dynamic Handler Framework for Network Slices Management. A. Kammoun, N. Tabbane, G. Diaz, N. Achir, A. Dandoush. 2019 International Conference on Software, Telecommunications and Computer Networks, SoftCOM 2019, Split, Croatia, September 19-21, 2019, 2019. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-7",
+    "href": "publications/index.html#section-7",
+    "title": "List of the Publications",
+    "section": "2018",
+    "text": "2018\n\nConference & workshop papers\n\nConference UAV-Based Data Gathering Using An Artificial Potential Fields Approach. C. Y. Tazibt, N. Achir, P. M\"uhlethaler, T. Djamah. 88th IEEE Vehicular Technology Conference, VTC Fall 2018, Chicago, IL, USA, August 27-30, 2018, 2018. doi\nConference Maximizing Mobiles Energy Saving Through Tasks Optimal Offloading Placement in two-tier Cloud. H. Mazouzi, N. Achir, K. Boussetta. Proceedings of the 21st ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems, MSWiM 2018, Montreal, QC, Canada, October 28 - November 02, 2018, 2018. doi\nConference End-to-End Efficient Heuristic Algorithm for 5G Network Slicing. A. Kammoun, N. Tabbane, G. Diaz, A. Dandoush, N. Achir. 32nd IEEE International Conference on Advanced Information Networking and Applications, AINA 2018, Krakow, Poland, May 16-18, 2018, 2018. doi\nConference Drones path planning for WSN data gathering: A column generation heuristic approach. M. Garraffa, M. Bekhti, L. L'etocart, N. Achir, K. Boussetta. 2018 IEEE Wireless Communications and Networking Conference, WCNC 2018, Barcelona, Spain, April 15-18, 2018, 2018. doi\nConference Admission Control Algorithm for Network Slicing Management in SDN-NFV Environment. A. Kammoun, N. Tabbane, G. Diaz, N. Achir. 6th International Conference on Multimedia Computing and Systems, ICMCS 2018, Rabat, Morocco, May 10-12, 2018, 2018. doi\nConference A Collaborative Environment Perception Approach for Vehicular Ad Hoc Networks. S. Ingrachen, N. Achir, P. M\"uhlethaler, T. Djamah, A. Berqia. 88th IEEE Vehicular Technology Conference, VTC Fall 2018, Chicago, IL, USA, August 27-30, 2018, 2018. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-8",
+    "href": "publications/index.html#section-8",
+    "title": "List of the Publications",
+    "section": "2017",
+    "text": "2017\n\nConference & workshop papers\n\nConference Wireless sensor network clustering for UAV-based data gathering. C. Y. Tazibt, M. Bekhti, T. Djamah, N. Achir, K. Boussetta. 2017 Wireless Days, Porto, Portugal, March 29-31, 2017, 2017. doi\nConference Swarm of Networked Drones for Video Detection of Intrusions. M. Bekhti, N. Achir, K. Boussetta. Wireless Internet - 10th International Conference, WiCON 2017, Tianjin, China, December 16-17, 2017, Proceedings, 2017. doi\nConference Optimized spatial CSMA for VANETs: A comparative study using a simple stochastic model and simulation results. Y. Bouchaala, P. M\"uhlethaler, O. Shagdar, N. Achir. 14th IEEE Annual Consumer Communications & Networking Conference, CCNC 2017, Las Vegas, NV, USA, January 8-11, 2017, 2017. doi\nConference Evaluating the gain of directional antennas in linear VANETs using stochastic geometry. P. M\"uhlethaler, Y. Bouchaala, O. Shagdar, N. Achir. International Conference on Performance Evaluation and Modeling in Wired and Wireless Networks, PEMWN 2017, Paris, France, November 28-30, 2017, 2017. doi\nConference Drone Package Delivery: A Heuristic approach for UAVs path planning and tracking. M. Bekhti, N. Achir, K. Boussetta, M. Abdennebi. EAI Endorsed Transactions on Internet of Things, 2017. doi\nConference Assessment of multi-UAVs tracking for data gathering. M. Bekhti, M. Garraffa, N. Achir, K. Boussetta, L. L'etocart. 13th International Wireless Communications and Mobile Computing Conference, IWCMC 2017, Valencia, Spain, June 26-30, 2017, 2017. doi\nConference Analysis of the IEEE 802.11 EDCF scheme for broadcast traffic: Application for VANETs. Y. Bouchaala, P. M\"uhlethaler, N. Achir. 2017 Wireless Days, Porto, Portugal, March 29-31, 2017, 2017. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-9",
+    "href": "publications/index.html#section-9",
+    "title": "List of the Publications",
+    "section": "2016",
+    "text": "2016\n\nConference & workshop papers\n\nConference Path planning of unmanned aerial vehicles with terrestrial wireless network tracking. M. Bekhti, M. Abdennebi, N. Achir, K. Boussetta. 2016 Wireless Days, WD 2016, Toulouse, France, March 23-25, 2016, 2016. doi\nConference Optimisation of spatial CSMA using a simple stochastic geometry model for 1D and 2D networks. N. Achir, Y. Bouchaala, P. M\"uhlethaler, O. Shagdar. 2016 International Wireless Communications and Mobile Computing Conference (IWCMC), Paphos, Cyprus, September 5-9, 2016, 2016. doi\nConference Comparison of spatial aloha and CSMA using simple stochastic geometry models for 1D and 2D networks. N. Achir, Y. Bouchaala, P. M\"uhlethaler, O. Shagdar. 23rd International Conference on Telecommunications, ICT 2016, Thessaloniki, Greece, May 16-18, 2016, 2016. doi\nConference Avoiding Collisions by Time Slot Reduction Supporting Voice and Video in 802.11 Networks. R. A. da Silva, A. Santos, M. Nogueira, K. Boussetta, N. Achir. 2016 IEEE Global Communications Conference, GLOBECOM 2016, Washington, DC, USA, December 4-8, 2016, 2016. doi\nConference A new security games based reaction algorithm against DOS attacks in VANETs. M. N. Mejri, N. Achir, M. Hamdi. 13th IEEE Annual Consumer Communications & Networking Conference, CCNC 2016, Las Vegas, NV, USA, January 9-12, 2016, 2016. doi\nConference A new group Diffie-Hellman key generation proposal for secure VANET communications. M. N. Mejri, N. Achir, M. Hamdi. 13th IEEE Annual Consumer Communications & Networking Conference, CCNC 2016, Las Vegas, NV, USA, January 9-12, 2016, 2016. doi\nConference A Heuristic Path Planning Approach for UAVs Integrating Tracking Support Through Terrestrial Wireless Networks. M. Bekhti, N. Achir, K. Boussetta, M. Abdennebi. Smart Objects and Technologies for Social Good - Second International Conference, GOODTECHS 2016, Venice, Italy, November 30 - December 1, 2016, Proceedings, 2016. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-10",
+    "href": "publications/index.html#section-10",
+    "title": "List of the Publications",
+    "section": "2015",
+    "text": "2015\n\nJournal articles\n\nJournal WLAN planning: Separate and joint optimization of both access point placement and channel assignment. A. Farsi, N. Achir, K. Boussetta. Ann. des T'el'ecommunications, 2015. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-11",
+    "href": "publications/index.html#section-11",
+    "title": "List of the Publications",
+    "section": "2014",
+    "text": "2014\n\nJournal articles\n\nJournal Planning and Deployment of Wireless Sensor Networks. R. Boutaba, N. Achir, M. St-Hilaire, E. F. Nakamura. Int. J. Distributed Sens. Networks, 2014. doi\n\n\n\nConference & workshop papers\n\nConference Optimized broadcast scheme for mobile ad hoc networks. A. Amari, N. Achir, P. M\"uhlethaler, A. Laouiti. IEEE Wireless Communications and Networking Conference, WCNC 2014, Istanbul, Turkey, April 6-9, 2014, 2014. doi\nConference Optimal sinks deployment and packet scheduling for Wireless Sensor Networks. N. Achir, P. M\"uhlethaler. 2014 IFIP Wireless Days, WD 2014, Rio de Janeiro, Brazil, November 12-14, 2014, 2014. doi\nConference Massive MIMO cooperative communications for wireless sensor networks: Throughput and energy efficiency analysis. N. Achir, M. Debbah, P. M\"uhlethaler. 25th IEEE Annual International Symposium on Personal, Indoor, and Mobile Radio Communication, PIMRC 2014, Washington DC, USA, September 2-5, 2014, 2014. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-12",
+    "href": "publications/index.html#section-12",
+    "title": "List of the Publications",
+    "section": "2013",
+    "text": "2013\n\nJournal articles\n\nJournal Multipath traffic balancing approach for disconnection reduction in video games over mobile ad hoc networks. A. Kaiser, N. Achir, K. Boussetta. Wirel. Commun. Mob. Comput., 2013. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-13",
+    "href": "publications/index.html#section-13",
+    "title": "List of the Publications",
+    "section": "2012",
+    "text": "2012\n\nJournal articles\n\nJournal Foreword to the special issue on wireless network: from home to backbone. N. Achir, H. Gacanin, O. C. M. B. Duarte. Telecommun. Syst., 2012. doi\n\n\n\nConference & workshop papers\n\nConference Vehicular Ad-hoc Networks using slotted Aloha: Point-to-point, emergency and broadcast communications. B. Blaszczyszyn, P. M\"uhlethaler, N. Achir. Proceedings of the IFIP Wireless Days Conference 2012, Ireland, November 21-23, 2012, 2012. doi\nConference Three-phase heuristic algorithm for Wireless LAN planning. A. Farsi, N. Achir, K. Boussetta. 2012 IEEE Wireless Communications and Networking Conference, WCNC 2012, Paris, France, April 1-4, 2012, 2012. doi\nConference Backhaul Topology Design and Weighted Max-Min Fair Capacity Allocation in Wireless Mesh Networks. A. Farsi, N. Achir, K. Boussetta, G. Diaz, A. Gomez. Advanced Infocomm Technology - 5th IEEE International Conference, ICAIT 2012, Paris, France, July 25-27, 2012. Revised Papers, 2012. doi\nConference Adaptive Contention Window for Zone-Based Dissemination of Vehicular Traffic. A. Gomez, G. Diaz, K. Boussetta, N. Achir, A. Farsi. Advanced Infocomm Technology - 5th IEEE International Conference, ICAIT 2012, Paris, France, July 25-27, 2012. Revised Papers, 2012. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-14",
+    "href": "publications/index.html#section-14",
+    "title": "List of the Publications",
+    "section": "2011",
+    "text": "2011\n\nJournal articles\n\nJournal Mobile WiMAX Bandwidth Reservation Thresholds: A Heuristic Approach. S. Khemiri, K. Boussetta, N. Achir, G. Pujolle. Int. J. Wirel. Networks Broadband Technol., 2011. doi\nJournal Artificial potential field approach in WSN deployment: Cost, QoM, connectivity, and lifetime constraints. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. Comput. Networks, 2011. doi\n\n\n\nConference & workshop papers\n\nConference Use case description of VPAIR: Virtual Police Agents for traffic guidance. A. Gomez, G. Diaz, K. Boussetta, N. Achir. Global Information Infrastructure Symposium - GIIS 2011, 2011. doi\nConference Heuristic approaches for access points deployment and Frequency Assignment in WLANs. A. Farsi, N. Achir, K. Boussetta. Global Information Infrastructure Symposium - GIIS 2011, 2011. doi\nConference Effects of packetization delay on multiplayer gaming experience over ad hoc networks. K. Boussetta, A. Kaiser, N. Achir. Proceedings of the IFIP Wireless Days Conference 2011, Niagara Falls, ON, Canada, October 10-12, 2011, 2011. doi\nConference An Energy-Delay Routing Protocol for Video Games over Multihops Ad Hoc Networks. A. Kaiser, K. Boussetta, N. Achir. Ad Hoc Networks - Third International ICST Conference, ADHOCNETS 2011, Paris, France, September 21-23, 2011, Revised Selected Papers, 2011. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-15",
+    "href": "publications/index.html#section-15",
+    "title": "List of the Publications",
+    "section": "2010",
+    "text": "2010\n\nConference & workshop papers\n\nConference Multi-Objective WSN Deployment: Quality of Monitoring, Connectivity and Lifetime. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. Proceedings of IEEE International Conference on Communications, ICC 2010, Cape Town, South Africa, 23-27 May 2010, 2010. doi\nConference Improving Energy Efficiency and Gameplay Fairness for Time-Sensitive Multiplayers Games in MANET. A. Kaiser, N. Achir, K. Boussetta. 2010 IEEE International Conference on Communications Workshops, 2010. doi\nConference A preliminary evaluation of backup servers for longer gaming sessions in MANETs. C. E. Palazzi, A. Kaiser, N. Achir, K. Boussetta. 3rd International Conference on Simulation Tools and Techniques, SIMUTools ’10, Malaga, Spain - March 16 - 18, 2010, 2010. doi\nConference A multipath traffic balancing proposal to reduce gaming disconnections in MANET. A. Kaiser, N. Achir, K. Boussetta. Proceedings of the 3rd IFIP Wireless Days Conference 2010, Venice, Italy, October 20-22, 2010, 2010. doi\nConference A MAC-level flow control algorithm for H.264/AVC video streaming over HSDPA. S. Benayoune, N. Achir, K. Boussetta, K. Chen. Proceedings of the 6th International Wireless Communications and Mobile Computing Conference, IWCMC 2010, Caen, France, June 28 - July 2, 2010, 2010. doi\nConference A Combined MAC and Physical Resource Allocation Mechanism in IEEE 802.16e Networks. S. Khemiri, G. Pujolle, K. Boussetta, N. Achir. Proceedings of the 71st IEEE Vehicular Technology Conference, VTC Spring 2010, 16-19 May 2010, Taipei, Taiwan, 2010. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-16",
+    "href": "publications/index.html#section-16",
+    "title": "List of the Publications",
+    "section": "2009",
+    "text": "2009\n\nJournal articles\n\nJournal A Tabu Search WSN Deployment Method for Monitoring Geographically Irregular Distributed Events. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. Sensors, 2009. doi\nJournal A MAC Centric Cross Layer Approach for H.264 Video Streaming over HSDPA. S. Benayoune, N. Achir, K. Boussetta, K. Chen. J. Commun., 2009. doi\n\n\n\nConference & workshop papers\n\nConference Two-tier Wireless Mesh Networks dimensioning. A. Farsi, N. Achir, K. Boussetta. 2nd IFIP Wireless Days, WD 2009, Paris, France, December 15-17, 2009, 2009. doi\nConference Potential Field Approach to Ensure Connectivity and Differentiated Detection in WSN Deployment. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. Proceedings of IEEE International Conference on Communications, ICC 2009, Dresden, Germany, 14-18 June 2009, 2009. doi\nConference On the Objective Evaluation of Real-Time Networked Games. A. Kaiser, D. Maggiorini, N. Achir, K. Boussetta. Proceedings of the Global Communications Conference, 2009. GLOBECOM 2009, Honolulu, Hawaii, USA, 30 November - 4 December 2009, 2009. doi\nConference Multiplayer games over wireless ad hoc networks: Energy and delay analysis. A. Kaiser, N. Achir, K. Boussetta. Proceedings of the International Conference on Ultra Modern Telecommunications, ICUMT 2009, 12-14 October 2009, St. Petersburg, Russia, 2009. doi\nConference Capacity Assignment for Multipath Routing in Multiclass Two-Tier Wireless Mesh Networks. A. Farsi, N. Achir, K. Boussetta. 2009 IEEE Globecom Workshops, 2009. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-17",
+    "href": "publications/index.html#section-17",
+    "title": "List of the Publications",
+    "section": "2008",
+    "text": "2008\n\nConference & workshop papers\n\nConference Heuristic Deployment to Achieve Both Differentiated Detection and Connectivity in WSN. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. Proceedings of the 67th IEEE Vehicular Technology Conference, VTC Spring 2008, 11-14 May 2008, Singapore, 2008. doi\nConference Content-Aware ARQ for H.264 Streaming in UTRAN. S. Benayoune, N. Achir, K. Boussetta, K. Chen. WCNC 2008, IEEE Wireless Communications & Networking Conference, March 31 2008 - April 3 2008, Las Vegas, Nevada, USA, Conference Proceedings, 2008. doi\nConference Bandwidth partitioning for Mobile WiMAX service provisioning. S. Khemiri, K. Boussetta, N. Achir. 1st IFIP Wireless Days, WD 2008, Dubai, UAE, November 24-27, 2008, 2008. doi\nConference A Tabu Search Approach for Differentiated Sensor Network Deployment. N. Aitsaadi, N. Achir, K. Khaled, G. Pujolle. 5th IEEE Consumer Communications and Networking Conference, CCNC 2008, Las Vegas, NV, USA, January 10-12, 2008, 2008. doi\nConference A gradient approach for differentiated wireless sensor network deployment. N. Aitsaadi, N. Achir, K. Boussetta, B. Gavish. 1st IFIP Wireless Days, WD 2008, Dubai, UAE, November 24-27, 2008, 2008. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-18",
+    "href": "publications/index.html#section-18",
+    "title": "List of the Publications",
+    "section": "2007",
+    "text": "2007\n\nConference & workshop papers\n\nConference WiMax bandwidth provisioning service to residential customers. S. Khemiri, K. Boussetta, N. Achir, G. Pujolle. 9th IFIP International Conference on Mobile Wireless Communications Networks, MWCN 2007, Cork, Ireland, 19-21 September, 2007, 2007. doi\nConference Optimal Call Admission Control for an IEEE 802.16 Wireless Metropolitan Area Network. S. Khemiri, K. Boussetta, N. Achir, G. Pujolle. Network Control and Optimization, First EuroFGI International Conference, NET-COOP 2007, Avignon, France, June 5-7, 2007, Proceedings, 2007. doi\nConference Optimal Call Admission Control for an IEEE 802.16 Wireless Metropolitan Area Network. S. Khemiri, K. Boussetta, N. Achir, G. Pujolle. Network Control and Optimization, 2007.\nConference M'ecanismes de gestion de la bande passante pour les r'eseaux WiMAX. S. Khemiri, K. Boussetta, N. Achir, G. Pujolle. 8`eme Colloque Francophone de Gestion de R'eseaux et de Services, GRES 2007, 2007.\nConference Differentiated Underwater Sensor Network Deployment. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. OCEANS 2007 - Europe, 2007. doi\nConference D'eploiement Diff'erenci'e des R'eseaux de Capteurs. N. Aitsaadi, N. Achir, K. Boussetta, G. Pujolle. GRES 2007 - 8`eme Colloque Francophone de Gestion de R'eseaux et de Services, 2007.\nConference Assessment of MANET broadcast schemes in the application context of multiplayer video games. A. Sardouk, S. Senouci, N. Achir, K. Boussetta. Proceedings of the 6th Workshop on Network and System Support for Games, NETGAMES 2007, Melbourne, Australia, September 19-20, 2007, 2007. doi\nConference A study of H.264/AVC robustness over a wireless link. S. Benayoune, N. Achir, K. Boussetta, K. Chen. 9th International Symposium on Signal Processing and Its Applications, ISSPA 2007, Sharjah, United Arab Emirates, February 12-15, 2007, 2007. doi\nConference A Markov Decision Model for Optimal CAC in IEEE 802.16. K. Boussetta, N. Achir, S. Khemiri. Networking and Electronic Commerce Research Conference (NAEC), 2007."
+  },
+  {
+    "objectID": "publications/index.html#section-19",
+    "href": "publications/index.html#section-19",
+    "title": "List of the Publications",
+    "section": "2006",
+    "text": "2006\n\nConference & workshop papers\n\nConference Performances des m'ecanismes de robustesse de H.264/AVC sur un lien sans fil. S. Benayoune, N. Achir, K. Boussetta, K. Chen. Colloque Francophone sur l’Ing'enierie des Protocoles - CFIP 2006, 2006. pdf\nConference Modeling Data to Management Dynamic Services Deployment in Autonomic Networks. G. Diaz, N. Achir, K. Chen. 2006 2nd International Conference on Information & Communication Technologies, 2006. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-20",
+    "href": "publications/index.html#section-20",
+    "title": "List of the Publications",
+    "section": "2005",
+    "text": "2005\n\nConference & workshop papers\n\nConference Multi-object video error recovery over wireless networks. N. Achir. WMuNeP’05 - Proceedings of the First ACM Workshop on Wireless Multimedia Networking and Performance Modeling, Montreal, Quebec, Canada, October 13, 2005, 2005. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-21",
+    "href": "publications/index.html#section-21",
+    "title": "List of the Publications",
+    "section": "2004",
+    "text": "2004\n\nJournal articles\n\nJournal Une nouvelle architecture de gestion de r'eseaux DiffServ bas'ee sur la technologie de r'eseau actif et la gestion `a base de r`egles. M. Fonseca, N. Agoulmine, Y. Ghamri-Doudane, N. Achir, G. Pujolle. Ann. des T'el'ecommunications, 2004. doi\nJournal Une nouvelle architecture de contr^ole de r'eseaux DiffServ bas'ee sur la technologie r'eseau actif et les politiques. M. S. Fonseca, N. Agoulmine, Y. Ghamri Doudane, N. Achir, G. Pujolle. Annals of Telecommunications - annales des t'el'ecommunications, 2004. doi"
+  },
+  {
+    "objectID": "publications/index.html#section-22",
+    "href": "publications/index.html#section-22",
+    "title": "List of the Publications",
+    "section": "2003",
+    "text": "2003\n\nConference & workshop papers\n\nConference Object-based unequal loss protection for multiobject video delivery. N. Achir, K. Salamation, G. Pujolle. Proceedings EC-VIP-MC 2003. 4th EURASIP Conference focused on Video/Image Processing and Multimedia Communications (IEEE Cat. No.03EX667), 2003. doi\nConference Network-based adaptation for MPEG-4 multicast video delivery. N. Achir, G. Pujolle. 10th International Conference on Telecommunications, 2003. ICT 2003., 2003. doi\nConference Multi-Object Video Rate Control. N. Achir, G. Pujolle. Network Control and Engineering for QoS, Security and Mobility II, IFIP TC6 / WG6.2 & WG6.7 Conference on Network Control and Engineering for QoS (Net-Con 2003), October 13-15, 2003, Muscat, Oman, 2003."
+  },
+  {
+    "objectID": "publications/index.html#section-23",
+    "href": "publications/index.html#section-23",
+    "title": "List of the Publications",
+    "section": "2002",
+    "text": "2002\n\nConference & workshop papers\n\nConference Active Technology as an Efficient Approach to Control DiffServ Networks: The DACA Architecture. N. Achir, N. Agoulmine, M. Fonseca, Y. Ghamri-Doudane, G. Pujolle. Management of Multimedia on the Internet, 5th IFIP/IEEE International Conference on Management of Multimedia Networks and Services, MMNS 2002, Santa Barbara, CA, USA, October 6-9, 2002, Proceedings, 2002. doi\nConference Active Technology as an Efficient Approach to Control DiffServ Networks: The DACA Architecture. N. Achir, N. Agoulmine, M. Fonseca, Y. Ghamri-Doudane, G. Pujolle. Management of Multimedia on the Internet, 2002."
+  },
+  {
+    "objectID": "publications/index.html#section-24",
+    "href": "publications/index.html#section-24",
+    "title": "List of the Publications",
+    "section": "2000",
+    "text": "2000\n\nJournal articles\n\nJournal Active Networking System Evaluation: a Pratical Experience. N. Achir, M. Fonseca, Y. Ghamri-Doudane, N. Agoulmine, A. Mehaoua. Networking and Information Systems Journal, 2000.\nJournal Active bandwidth sharing for multi-layered video in multi-source environments. N. Achir, M. Dias de Amorim, O. C. Muniz Bandeira Duarte, G. Pujolle. Network Information System Journal, 2000."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "NAI – Networks Architecture & Infrastructure and Networks, Cloud, & Sensing Convergence\n\n\n\n2023-07-01 -- 2029-06-30\n\n\n\nThe NAI project designs agile, resource-efficient architectures that merge network, cloud, and sensing capabilities for 5G and 6G. It enables a seamless continuum from edge devices to data centers using advanced orchestration, network slicing, and non-terrestrial integration. This framework supports diverse high-performance applications like Industry 4.0, smart mobility, and digital twins.\n\n\n\n\n\n\n\n\n\n\n\n\nFITNESS – From IoT breakthroughs to Network Enhanced ServiceS\n\n\n\n2023-07-01 -- 2029-06-30\n\n\n\nThe FITNESS project develops innovative IoT solutions by optimizing elementary building blocks for massive connectivity, Industry 4.0, and connected transport. It focuses on critical technical constraints such as ultra-low power consumption, high security, and low latency for mission-critical vehicular applications. By ensuring the coexistence of 5G and post-5G protocols, it enables a robust and scalable ecosystem for future digital services.\n\n\n\n\n\n\n\n\n\n\n\n\nMob Sci-Dat Factory\n\n\nThe Mob Sci-Dat Factory builds a shared digital infrastructure to process and analyze heterogeneous mobility data for people and goods. It provides a secure cloud platform with open-source tools to support sustainable decision-making and data sovereignty in French research. This factory aims to unify scientific communities to accelerate the transition toward greener, multimodal transport systems.\n\n\n\n\n\n\n\n\n\n\n\n\nMITIK – Mobility and contact traces from non-intrusive passive measurements\n\n\nThe MITIK project utilizes passive wireless sensors to capture spatiotemporal activity and contact traces from mobile devices without intruding on user privacy. It develops advanced methods for context-aware deployment, data anonymization, and the reconstruction of individual trajectories to model human mobility. This research enables a better understanding of social interactions and spatial usage through scientifically rigorous data collection.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "News",
+    "section": "",
+    "text": "PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA\n\n\nModel placement in inference delivery networks\n\n\n\n\n\nFeb 26, 2026\n\n\nNadjib Achir\n\n\n\n\n\nNo matching items"
+  }
+]

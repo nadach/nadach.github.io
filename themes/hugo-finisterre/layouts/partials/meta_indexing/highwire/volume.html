@@ -1,4 +1,0 @@
-{{- $ := .dot -}}
-{{- if (isset $.Params "volume") | and (not (eq $.Params.volume "")) -}}
-<meta name="citation_volume" conent="{{ $.Params.volume | htmlEscape }}">
-{{ end -}}

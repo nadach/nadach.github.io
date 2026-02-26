@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+resources:
+  - CNAME
+  
+website:
+  title: "Nadjib Achir"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  # page-footer: "Made with ❤️ and Quarto"
+  page-footer:
+    left: "(c) Nadjib Achir, 2026"
+  navbar:
+    right:
+      - text: Home
+        href: index.qmd
+      - text: News 
+        href: news/index.qmd
+        icon: megaphone
+      - text: Projects 
+        href: projects/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+#    tools:
+#      - icon: github
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    toc_smooth_scroll: true
+    toc_highlight: true
+    fig-align: center
+    linkcolor: blue
+#    backgroundcolor: "#eeffee"
+#    mainfont: "sarif"

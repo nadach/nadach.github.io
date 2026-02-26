@@ -1,0 +1,30 @@
+- title: NAI -- Networks Architecture & Infrastructure and Networks, Cloud, & Sensing Convergence
+  path: https://pepr-futurenetworks.fr/projet/nai/ 
+  image: images/PEPR-NF-NAI.jpg
+  description: >
+    The NAI project designs agile, resource-efficient architectures that merge network, cloud, and sensing capabilities for 5G and 6G. It enables a seamless continuum from edge devices to data centers using advanced orchestration, network slicing, and non-terrestrial integration. This framework supports diverse high-performance applications like Industry 4.0, smart mobility, and digital twins.
+  categories: [2023-07-01 -- 2029-06-30]
+  #date: 2023-01-01
+- title: FITNESS -- From IoT breakthroughs to Network Enhanced ServiceS
+  path: https://pepr-futurenetworks.fr/projet/fitness/
+  image: images/PEPR-NF-FITNESS.jpg
+  description: >
+    The FITNESS project develops innovative IoT solutions by optimizing elementary building blocks for massive connectivity, Industry 4.0, and connected transport. It focuses on critical technical constraints such as ultra-low power consumption, high security, and low latency for mission-critical vehicular applications. By ensuring the coexistence of 5G and post-5G protocols, it enables a robust and scalable ecosystem for future digital services.
+  categories: [2023-07-01 -- 2029-06-30]
+#  date: 2024-01-01
+
+- title: Mob Sci-Dat Factory
+  path: https://pepr-mobidec.fr/mob-sci-dat-factory-pc3
+  image: images/PEPR-MOBIDEC-MOB-SCI-DAT-FACTORY.jpg
+  description: >
+    The Mob Sci-Dat Factory builds a shared digital infrastructure to process and analyze heterogeneous mobility data for people and goods. It provides a secure cloud platform with open-source tools to support sustainable decision-making and data sovereignty in French research. This factory aims to unify scientific communities to accelerate the transition toward greener, multimodal transport systems.
+#  categories: [R, Machine Learning, Clustering, Statistical Modelling]
+  #date: 2024-04-01
+
+- title: MITIK -- Mobility and contact traces from non-intrusive passive measurements
+  path: https://project.inria.fr/mitik/
+  image: images/ANR-MITIK.jpg
+  description: >
+    The MITIK project utilizes passive wireless sensors to capture spatiotemporal activity and contact traces from mobile devices without intruding on user privacy. It develops advanced methods for context-aware deployment, data anonymization, and the reconstruction of individual trajectories to model human mobility. This research enables a better understanding of social interactions and spatial usage through scientifically rigorous data collection.
+  #categories: [R, Data Visualization, Environmental Science]
+  #date: 2024-07-01

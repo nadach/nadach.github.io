@@ -1,0 +1,56 @@
+---
+title: "Nadjib Achir"
+subtitle: "Inria Researcher (CRHC)"
+image: img/Nadjib.Achir.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: trestles #jolla
+#  image-shape: round
+  links:
+    - text: "{{< fa envelope >}} Email"
+      url: mailto:nadjib.achir@inria.fr
+    - text: Hal-id
+      url: https://cv.hal.science/nadjib-achir
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      url: https://scholar.google.com/citations?user=fL5sKqMAAAAJ&hl=fr
+    - text: "{{< ai orcid >}} ORCID 0000-0002-5449-948X"
+      url: https://orcid.org/0000-0002-5449-948X
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/nadjib-achir-179b1a32/
+comments: false
+listing:
+  - id: featured-news
+    contents: news/
+    type: table
+    sort: "date desc"
+    max-items: 3
+    grid-columns: 1
+    include:
+      featured: true
+    sort-ui: false
+    filter-ui: false
+format:
+  html:
+    page-layout: full
+---
+
+## Bio
+
+I am a **researcher (HDR)** at [Inria](https://inria.fr/fr), and a member of the [TRiBE](https://team.inria.fr/tribe/) team at Inria Saclay.
+
+I was an **Associate Professor (HDR)** at [Université Sorbonne Paris Nord](https://www.univ-spn.fr/) from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.
+
+My recent research work focuses on two complementary directions: **(i) collecting and analyzing mobility data**, especially through measurements enabled by wireless networks **(ii) resource allocation and computation offloading at the edge**, to support ultra-responsive applications with strong latency and compute constraints. **(iii) Edge AI**, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources.
+
+## Contact info
+
+Inria Saclay\
+Batiment Turing,\ 
+1 Rue Honoré d'Estienne d'Orves,\
+91120 Palaiseau, France
+
+## News
+
+::: {#featured-news}
+:::
+

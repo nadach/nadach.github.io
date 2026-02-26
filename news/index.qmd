@@ -1,0 +1,10 @@
+---
+title: "News"
+listing: default
+format:
+  html:
+    page-layout: full
+---
+
+
+
