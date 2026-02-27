@@ -39,14 +39,21 @@
     "href": "index.html",
     "title": "Nadjib Achir",
     "section": "",
-    "text": "I am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 26, 2026\n\n\nPostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA\n\n\nNadjib Achir\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Nadjib Achir",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 26, 2026\n\n\nPostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA\n\n\nNadjib Achir\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bio",
     "href": "index.html#bio",
     "title": "Nadjib Achir",
-    "section": "",
-    "text": "I am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
+    "section": "Bio",
+    "text": "Bio\nI am a researcher (HDR) at Inria, and a member of the TRiBE team at Inria Saclay.\nI was an Associate Professor (HDR) at Université Sorbonne Paris Nord from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.\nMy recent research work focuses on two complementary directions: (i) collecting and analyzing mobility data, especially through measurements enabled by wireless networks (ii) resource allocation and computation offloading at the edge, to support ultra-responsive applications with strong latency and compute constraints. (iii) Edge AI, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources."
   },
   {
     "objectID": "index.html#address",
@@ -54,13 +61,6 @@
     "title": "Nadjib Achir",
     "section": "Address",
     "text": "Address\nInria Saclay\nBatiment Turing,  1 Rue Honoré d’Estienne d’Orves,\n91120 Palaiseau, France\nAfficher une carte plus grande"
-  },
-  {
-    "objectID": "index.html#news",
-    "href": "index.html#news",
-    "title": "Nadjib Achir",
-    "section": "News",
-    "text": "News\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nFeb 26, 2026\n\n\nPostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA\n\n\nNadjib Achir\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications/index.html",

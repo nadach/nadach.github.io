@@ -4,7 +4,7 @@ project:
 
 resources:
   - CNAME
-  
+
 website:
   title: "Nadjib Achir"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
@@ -15,12 +15,12 @@ website:
     right:
       - text: Home
         href: index.qmd
-      - text: News 
+      - text: News
         href: news/index.qmd
         icon: megaphone
-      - text: Projects 
+      - text: Projects
         href: projects/index.qmd
-      - text: Publications
+      - text: Papers
         href: publications/index.qmd
 #    tools:
 #      - icon: github
@@ -34,5 +34,8 @@ format:
     toc_highlight: true
     fig-align: center
     linkcolor: blue
+    toc-location: right
+    # grid:
+    #   margin-width: 200px
 #    backgroundcolor: "#eeffee"
 #    mainfont: "sarif"

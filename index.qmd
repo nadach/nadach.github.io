@@ -17,6 +17,8 @@ about: # https://quarto.org/docs/websites/website-about.html
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/nadjib-achir-179b1a32/
+    - text: cv
+      href: https://nadach.github.io/files/cv/CV_Nadjib_Achir.pdf
 comments: false
 listing:
   - id: featured-news
@@ -33,6 +35,15 @@ format:
   html:
     page-layout: full
 ---
+
+<!-- :::: {.column-margin}
+
+:::: -->
+
+## News
+::: {#featured-news}
+:::
+
 
 ## Bio
 
@@ -52,9 +63,4 @@ Batiment Turing,\
 ```{=html}
 <iframe width="350" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=2.2052022814750676%2C48.71348598478913%2C2.206489741802216%2C48.71652815852404&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=19/48.715007/2.205846">Afficher une carte plus grande</a></small>
 ```
-
-## News
-
-::: {#featured-news}
-:::
 
