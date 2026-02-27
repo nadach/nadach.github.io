@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - cv_nadjib_achir.pdf
 
 resources:
   - CNAME

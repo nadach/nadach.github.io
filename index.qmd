@@ -18,7 +18,8 @@ about: # https://quarto.org/docs/websites/website-about.html
       text: LinkedIn
       href: https://linkedin.com/in/nadjib-achir-179b1a32/
     - text: cv
-      href: https://nadach.github.io/files/cv/CV_Nadjib_Achir.pdf
+      href: cv_nadjib_achir.pdf
+      target: _blank
 comments: false
 listing:
   - id: featured-news
@@ -31,19 +32,18 @@ listing:
       featured: true
     sort-ui: false
     filter-ui: false
+    fields: [date, title]
 format:
   html:
     page-layout: full
 ---
 
 <!-- :::: {.column-margin}
-
 :::: -->
 
 ## News
 ::: {#featured-news}
 :::
-
 
 ## Bio
 
