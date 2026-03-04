@@ -2,6 +2,7 @@
 # Quarto
 # -------------------------
 /.quarto/
+*.Rproj
 
 # If you ever see _site/ created locally (e.g., older configs), ignore it
 /_site/
