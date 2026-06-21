@@ -1,770 +1,1135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atelier Hachage — La vie d'un chercheur</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
-<style>
-  :root {
-    --dark:  #0D1B2A;
-    --navy:  #163B5F;
-    --teal:  #1C7293;
-    --teal2: #1A8FAF;
-    --coral: #E94560;
-    --mint:  #02C39A;
-    --white: #FFFFFF;
-    --light: #F4F7FA;
-    --gray:  #64748B;
-    --lblue: #CADCFC;
-    --text:  #1E293B;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Hachage — La vie d'un chercheur</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css"
+    />
+    <style>
+      :root {
+        --dark: #0d1b2a;
+        --navy: #163b5f;
+        --teal: #1c7293;
+        --teal2: #1a8faf;
+        --coral: #e94560;
+        --mint: #02c39a;
+        --white: #ffffff;
+        --light: #f4f7fa;
+        --gray: #64748b;
+        --lblue: #cadcfc;
+        --text: #1e293b;
+      }
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: var(--dark);
-    color: var(--white);
-    min-height: 100vh;
-    font-size: 16px;
-  }
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        background: var(--dark);
+        color: var(--white);
+        min-height: 100vh;
+        font-size: 16px;
+      }
 
-  /* ── Header ── */
-  header {
-    background: #0A1520;
-    border-bottom: 3px solid var(--coral);
-    padding: 14px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: -0.02em;
-  }
-  .header-title span { color: var(--mint); }
-  .header-sub {
-    font-size: 13px;
-    color: var(--gray);
-    margin-top: 2px;
-  }
-  .badge {
-    background: var(--teal);
-    color: var(--white);
-    font-size: 11px;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 20px;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-  }
+      /* ── Header ── */
+      header {
+        background: #0a1520;
+        border-bottom: 3px solid var(--coral);
+        padding: 14px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header-title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: -0.02em;
+      }
+      .header-title span {
+        color: var(--mint);
+      }
+      .header-sub {
+        font-size: 13px;
+        color: var(--gray);
+        margin-top: 2px;
+      }
+      .badge {
+        background: var(--teal);
+        color: var(--white);
+        font-size: 11px;
+        font-weight: 600;
+        padding: 4px 12px;
+        border-radius: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
 
-  /* ── Tabs ── */
-  nav.tabs {
-    display: flex;
-    gap: 4px;
-    padding: 16px 40px 0;
-    background: #0A1520;
-  }
-  .tab-btn {
-    background: none;
-    border: none;
-    border-bottom: 3px solid transparent;
-    color: var(--gray);
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 20px 12px;
-    cursor: pointer;
-    transition: color .15s, border-color .15s;
-    white-space: nowrap;
-  }
-  .tab-btn:hover { color: var(--white); }
-  .tab-btn.active {
-    color: var(--mint);
-    border-bottom-color: var(--mint);
-  }
-  .tab-btn i { margin-right: 6px; font-size: 17px; vertical-align: -3px; }
+      /* ── Tabs ── */
+      nav.tabs {
+        display: flex;
+        gap: 4px;
+        padding: 16px 40px 0;
+        background: #0a1520;
+      }
+      .tab-btn {
+        background: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        color: var(--gray);
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px 20px 12px;
+        cursor: pointer;
+        transition:
+          color 0.15s,
+          border-color 0.15s;
+        white-space: nowrap;
+      }
+      .tab-btn:hover {
+        color: var(--white);
+      }
+      .tab-btn.active {
+        color: var(--mint);
+        border-bottom-color: var(--mint);
+      }
+      .tab-btn i {
+        margin-right: 6px;
+        font-size: 17px;
+        vertical-align: -3px;
+      }
 
-  /* ── Main ── */
-  main { padding: 36px 40px; max-width: 1100px; margin: 0 auto; }
-  .section { display: none; }
-  .section.active { display: block; }
+      /* ── Main ── */
+      main {
+        padding: 36px 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .section {
+        display: none;
+      }
+      .section.active {
+        display: block;
+      }
 
-  /* ── Cards ── */
-  .card {
-    background: #132030;
-    border: 1px solid #1E3550;
-    border-radius: 14px;
-    padding: 28px 32px;
-    margin-bottom: 24px;
-  }
-  .card-title {
-    font-size: 19px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .card-title i { color: var(--mint); font-size: 22px; }
-  .card-desc {
-    font-size: 15px;
-    color: #94A3B8;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+      /* ── Cards ── */
+      .card {
+        background: #132030;
+        border: 1px solid #1e3550;
+        border-radius: 14px;
+        padding: 28px 32px;
+        margin-bottom: 24px;
+      }
+      .card-title {
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .card-title i {
+        color: var(--mint);
+        font-size: 22px;
+      }
+      .card-desc {
+        font-size: 15px;
+        color: #94a3b8;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
 
-  /* ── Inputs ── */
-  input[type="text"] {
-    background: #0D1B2A;
-    border: 1.5px solid #1E3550;
-    border-radius: 8px;
-    color: var(--white);
-    font-size: 17px;
-    padding: 10px 16px;
-    width: 100%;
-    transition: border-color .15s;
-    font-family: inherit;
-  }
-  input[type="text"]:focus {
-    outline: none;
-    border-color: var(--teal);
-  }
-  input[type="text"]::placeholder { color: #4A5568; }
+      /* ── Inputs ── */
+      input[type="text"] {
+        background: #0d1b2a;
+        border: 1.5px solid #1e3550;
+        border-radius: 8px;
+        color: var(--white);
+        font-size: 17px;
+        padding: 10px 16px;
+        width: 100%;
+        transition: border-color 0.15s;
+        font-family: inherit;
+      }
+      input[type="text"]:focus {
+        outline: none;
+        border-color: var(--teal);
+      }
+      input[type="text"]::placeholder {
+        color: #4a5568;
+      }
 
-  /* ── Chip letters ── */
-  .chip-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    min-height: 60px;
-    align-items: center;
-    margin: 16px 0;
-  }
-  .letter-chip {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #1A3A5C;
-    border-radius: 8px;
-    padding: 6px 10px;
-    min-width: 38px;
-  }
-  .letter-ch { font-size: 17px; font-weight: 700; color: var(--mint); }
-  .letter-val { font-size: 11px; color: #7EC8E3; margin-top: 2px; }
-  .sum-label { font-size: 15px; color: var(--gray); margin-left: 6px; }
+      /* ── Chip letters ── */
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        min-height: 60px;
+        align-items: center;
+        margin: 16px 0;
+      }
+      .letter-chip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #1a3a5c;
+        border-radius: 8px;
+        padding: 6px 10px;
+        min-width: 38px;
+      }
+      .letter-ch {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--mint);
+      }
+      .letter-val {
+        font-size: 11px;
+        color: #7ec8e3;
+        margin-top: 2px;
+      }
+      .sum-label {
+        font-size: 15px;
+        color: var(--gray);
+        margin-left: 6px;
+      }
 
-  /* ── Stats ── */
-  .stats { display: flex; gap: 12px; margin-top: 16px; }
-  .stat {
-    flex: 1;
-    background: #0D1B2A;
-    border-radius: 10px;
-    padding: 14px 12px;
-    text-align: center;
-    border: 1px solid #1E3550;
-  }
-  .stat.accent-teal { border-color: var(--teal); background: #0F2535; }
-  .stat.accent-coral { border-color: var(--coral); background: #1F0F15; }
-  .stat.accent-mint { border-color: var(--mint); background: #081F1A; }
-  .stat-val {
-    font-size: 34px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-  }
-  .stat.accent-teal .stat-val { color: var(--mint); }
-  .stat.accent-coral .stat-val { color: var(--coral); }
-  .stat.accent-mint .stat-val { color: var(--mint); }
-  .stat-lbl { font-size: 12px; color: var(--gray); margin-top: 6px; }
+      /* ── Stats ── */
+      .stats {
+        display: flex;
+        gap: 12px;
+        margin-top: 16px;
+      }
+      .stat {
+        flex: 1;
+        background: #0d1b2a;
+        border-radius: 10px;
+        padding: 14px 12px;
+        text-align: center;
+        border: 1px solid #1e3550;
+      }
+      .stat.accent-teal {
+        border-color: var(--teal);
+        background: #0f2535;
+      }
+      .stat.accent-coral {
+        border-color: var(--coral);
+        background: #1f0f15;
+      }
+      .stat.accent-mint {
+        border-color: var(--mint);
+        background: #081f1a;
+      }
+      .stat-val {
+        font-size: 34px;
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1;
+      }
+      .stat.accent-teal .stat-val {
+        color: var(--mint);
+      }
+      .stat.accent-coral .stat-val {
+        color: var(--coral);
+      }
+      .stat.accent-mint .stat-val {
+        color: var(--mint);
+      }
+      .stat-lbl {
+        font-size: 12px;
+        color: var(--gray);
+        margin-top: 6px;
+      }
 
-  /* ── Hash display ── */
-  .hash-display {
-    font-family: 'Courier New', monospace;
-    font-size: 13px;
-    background: #0A1520;
-    border: 1px solid #1E3550;
-    border-radius: 8px;
-    padding: 12px 16px;
-    word-break: break-all;
-    line-height: 1.8;
-    min-height: 42px;
-    color: #94A3B8;
-    margin-top: 8px;
-  }
+      /* ── Hash display ── */
+      .hash-display {
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        background: #0a1520;
+        border: 1px solid #1e3550;
+        border-radius: 8px;
+        padding: 12px 16px;
+        word-break: break-all;
+        line-height: 1.8;
+        min-height: 42px;
+        color: #94a3b8;
+        margin-top: 8px;
+      }
 
-  /* ── Two columns ── */
-  .col2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  @media (max-width: 700px) { .col2 { grid-template-columns: 1fr; } }
+      /* ── Two columns ── */
+      .col2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 700px) {
+        .col2 {
+          grid-template-columns: 1fr;
+        }
+      }
 
-  .col-label {
-    font-size: 12px;
-    color: var(--gray);
-    text-transform: uppercase;
-    letter-spacing: .06em;
-    margin-bottom: 8px;
-    display: block;
-  }
+      .col-label {
+        font-size: 12px;
+        color: var(--gray);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 8px;
+        display: block;
+      }
 
-  /* ── Diff display ── */
-  .diff-same { color: #334155; }
-  .diff-changed { color: var(--coral); font-weight: 700; }
+      /* ── Diff display ── */
+      .diff-same {
+        color: #334155;
+      }
+      .diff-changed {
+        color: var(--coral);
+        font-weight: 700;
+      }
 
-  /* ── Pipeline ── */
-  .pipeline {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin: 20px 0;
-  }
-  .pipe-box {
-    background: var(--navy);
-    border-radius: 10px;
-    padding: 12px 18px;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    color: var(--lblue);
-    text-align: center;
-  }
-  .pipe-box.result {
-    background: var(--mint);
-    color: var(--dark);
-    font-weight: 700;
-    font-size: 16px;
-  }
-  .pipe-arrow { font-size: 22px; color: var(--gray); }
-  .pipe-label { font-size: 11px; color: var(--gray); margin-top: 4px; }
+      /* ── Pipeline ── */
+      .pipeline {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+      }
+      .pipe-box {
+        background: var(--navy);
+        border-radius: 10px;
+        padding: 12px 18px;
+        font-family: "Courier New", monospace;
+        font-size: 14px;
+        color: var(--lblue);
+        text-align: center;
+      }
+      .pipe-box.result {
+        background: var(--mint);
+        color: var(--dark);
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .pipe-arrow {
+        font-size: 22px;
+        color: var(--gray);
+      }
+      .pipe-label {
+        font-size: 11px;
+        color: var(--gray);
+        margin-top: 4px;
+      }
 
-  /* ── Buttons ── */
-  .btn {
-    background: var(--teal);
-    color: var(--white);
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: background .15s, transform .1s;
-    font-family: inherit;
-  }
-  .btn:hover { background: var(--teal2); }
-  .btn:active { transform: scale(0.98); }
-  .btn.coral { background: var(--coral); }
-  .btn.coral:hover { background: #d03050; }
-  .btn.ghost {
-    background: transparent;
-    border: 1.5px solid #1E3550;
-    color: var(--gray);
-    font-size: 13px;
-    padding: 7px 14px;
-  }
-  .btn.ghost:hover { border-color: var(--teal); color: var(--white); }
+      /* ── Buttons ── */
+      .btn {
+        background: var(--teal);
+        color: var(--white);
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition:
+          background 0.15s,
+          transform 0.1s;
+        font-family: inherit;
+      }
+      .btn:hover {
+        background: var(--teal2);
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .btn.coral {
+        background: var(--coral);
+      }
+      .btn.coral:hover {
+        background: #d03050;
+      }
+      .btn.ghost {
+        background: transparent;
+        border: 1.5px solid #1e3550;
+        color: var(--gray);
+        font-size: 13px;
+        padding: 7px 14px;
+      }
+      .btn.ghost:hover {
+        border-color: var(--teal);
+        color: var(--white);
+      }
 
-  /* ── Properties grid ── */
-  .prop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
-  .prop-card {
-    border-radius: 10px;
-    padding: 16px 18px;
-  }
-  .prop-card.teal  { background: #0F2E3A; border: 1px solid var(--teal); }
-  .prop-card.coral { background: #2A1019; border: 1px solid var(--coral); }
-  .prop-card.navy  { background: #0D1F30; border: 1px solid #2A5080; }
-  .prop-card.mint  { background: #041F18; border: 1px solid var(--mint); }
-  .prop-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
-  .prop-card.teal  .prop-title { color: var(--mint); }
-  .prop-card.coral .prop-title { color: var(--coral); }
-  .prop-card.navy  .prop-title { color: var(--lblue); }
-  .prop-card.mint  .prop-title { color: var(--mint); }
-  .prop-desc { font-size: 13.5px; color: #94A3B8; line-height: 1.5; }
+      /* ── Properties grid ── */
+      .prop-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .prop-card {
+        border-radius: 10px;
+        padding: 16px 18px;
+      }
+      .prop-card.teal {
+        background: #0f2e3a;
+        border: 1px solid var(--teal);
+      }
+      .prop-card.coral {
+        background: #2a1019;
+        border: 1px solid var(--coral);
+      }
+      .prop-card.navy {
+        background: #0d1f30;
+        border: 1px solid #2a5080;
+      }
+      .prop-card.mint {
+        background: #041f18;
+        border: 1px solid var(--mint);
+      }
+      .prop-title {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .prop-card.teal .prop-title {
+        color: var(--mint);
+      }
+      .prop-card.coral .prop-title {
+        color: var(--coral);
+      }
+      .prop-card.navy .prop-title {
+        color: var(--lblue);
+      }
+      .prop-card.mint .prop-title {
+        color: var(--mint);
+      }
+      .prop-desc {
+        font-size: 13.5px;
+        color: #94a3b8;
+        line-height: 1.5;
+      }
 
-  /* ── Challenges ── */
-  .challenge {
-    background: #0D1B2A;
-    border: 1px solid #1E3550;
-    border-radius: 10px;
-    padding: 18px 20px;
-    margin-bottom: 14px;
-  }
-  .chal-num {
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--teal);
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .chal-q { font-size: 16px; color: var(--white); line-height: 1.55; }
-  .hint-btn {
-    background: none;
-    border: 1px solid #1E3550;
-    color: var(--gray);
-    border-radius: 6px;
-    padding: 5px 12px;
-    font-size: 13px;
-    cursor: pointer;
-    margin-top: 12px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: border-color .15s, color .15s;
-    font-family: inherit;
-  }
-  .hint-btn:hover { border-color: var(--teal); color: var(--white); }
-  .hint-box {
-    display: none;
-    margin-top: 12px;
-    padding: 14px 16px;
-    background: #132030;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #94A3B8;
-    line-height: 1.65;
-    border-left: 3px solid var(--mint);
-  }
+      /* ── Challenges ── */
+      .challenge {
+        background: #0d1b2a;
+        border: 1px solid #1e3550;
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin-bottom: 14px;
+      }
+      .chal-num {
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--teal);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .chal-q {
+        font-size: 16px;
+        color: var(--white);
+        line-height: 1.55;
+      }
+      .hint-btn {
+        background: none;
+        border: 1px solid #1e3550;
+        color: var(--gray);
+        border-radius: 6px;
+        padding: 5px 12px;
+        font-size: 13px;
+        cursor: pointer;
+        margin-top: 12px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition:
+          border-color 0.15s,
+          color 0.15s;
+        font-family: inherit;
+      }
+      .hint-btn:hover {
+        border-color: var(--teal);
+        color: var(--white);
+      }
+      .hint-box {
+        display: none;
+        margin-top: 12px;
+        padding: 14px 16px;
+        background: #132030;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #94a3b8;
+        line-height: 1.65;
+        border-left: 3px solid var(--mint);
+      }
 
-  /* ── Mono code ── */
-  code {
-    font-family: 'Courier New', monospace;
-    background: #0A1520;
-    border: 1px solid #1E3550;
-    border-radius: 4px;
-    padding: 2px 7px;
-    font-size: 13px;
-    color: var(--mint);
-  }
+      /* ── Mono code ── */
+      code {
+        font-family: "Courier New", monospace;
+        background: #0a1520;
+        border: 1px solid #1e3550;
+        border-radius: 4px;
+        padding: 2px 7px;
+        font-size: 13px;
+        color: var(--mint);
+      }
 
-  /* ── Section intro ── */
-  .section-intro {
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 6px;
-  }
-  .section-intro span { color: var(--mint); }
-  .section-intro-sub {
-    font-size: 15px;
-    color: var(--gray);
-    margin-bottom: 28px;
-    line-height: 1.55;
-  }
+      /* ── Section intro ── */
+      .section-intro {
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 6px;
+      }
+      .section-intro span {
+        color: var(--mint);
+      }
+      .section-intro-sub {
+        font-size: 15px;
+        color: var(--gray);
+        margin-bottom: 28px;
+        line-height: 1.55;
+      }
 
-  /* ── Collision badge ── */
-  .collision-info {
-    font-size: 13px;
-    color: #64748B;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #0A1520;
-    border-radius: 6px;
-  }
-  .collision-found {
-    color: var(--coral);
-    font-weight: 600;
-    padding: 8px 12px;
-    background: #1F0F15;
-    border-radius: 6px;
-    border: 1px solid var(--coral);
-    margin-top: 10px;
-    font-size: 14px;
-  }
+      /* ── Collision badge ── */
+      .collision-info {
+        font-size: 13px;
+        color: #64748b;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #0a1520;
+        border-radius: 6px;
+      }
+      .collision-found {
+        color: var(--coral);
+        font-weight: 600;
+        padding: 8px 12px;
+        background: #1f0f15;
+        border-radius: 6px;
+        border: 1px solid var(--coral);
+        margin-top: 10px;
+        font-size: 14px;
+      }
 
-  /* ── MAC result ── */
-  .mac-result {
-    font-family: 'Courier New', monospace;
-    font-size: 15px;
-    padding: 8px 14px;
-    border-radius: 8px;
-    display: inline-block;
-  }
-  .mac-original { background: #0D1F30; color: var(--lblue); border: 1px solid #1E3550; }
-  .mac-hashed   { background: #041F18; color: var(--mint);  border: 1px solid var(--mint); font-weight: 700; }
+      /* ── MAC result ── */
+      .mac-result {
+        font-family: "Courier New", monospace;
+        font-size: 15px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+      .mac-original {
+        background: #0d1f30;
+        color: var(--lblue);
+        border: 1px solid #1e3550;
+      }
+      .mac-hashed {
+        background: #041f18;
+        color: var(--mint);
+        border: 1px solid var(--mint);
+        font-weight: 700;
+      }
 
-  /* ── Footer ── */
-  footer {
-    text-align: center;
-    padding: 24px;
-    font-size: 12px;
-    color: #334155;
-    margin-top: 40px;
-    border-top: 1px solid #1E3550;
-  }
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 24px;
+        font-size: 12px;
+        color: #334155;
+        margin-top: 40px;
+        border-top: 1px solid #1e3550;
+      }
 
-  /* ── Scrollbar ── */
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: var(--dark); }
-  ::-webkit-scrollbar-thumb { background: #1E3550; border-radius: 3px; }
-</style>
-</head>
-<body>
-
-<header>
-  <div>
-    <div class="header-title">Atelier <span>Hachage Cryptographique</span></div>
-    <div class="header-sub">Nadjib Achir — Inria TRiBE</div>
-  </div>
-  <span class="badge">Visite lycéens</span>
-</header>
-
-<nav class="tabs">
-  <button class="tab-btn active" onclick="showTab('simple', this)">
-    <i class="ti ti-math-function"></i>Hash simple
-  </button>
-  <button class="tab-btn" onclick="showTab('sha256', this)">
-    <i class="ti ti-shield-lock"></i>SHA-256
-  </button>
-  <button class="tab-btn" onclick="showTab('mac', this)">
-    <i class="ti ti-device-mobile"></i>MAC & vie privée
-  </button>
-  <button class="tab-btn" onclick="showTab('defis', this)">
-    <i class="ti ti-puzzle"></i>Défis
-  </button>
-</nav>
-
-<main>
-
-<!-- ══ SECTION 1 : Hash simple ══ -->
-<div class="section active" id="sec-simple">
-  <p class="section-intro">Hash <span>simple</span> — la version papier</p>
-  <p class="section-intro-sub">Chaque lettre vaut sa position dans l'alphabet (A=1, B=2 … Z=26). On additionne toutes les valeurs, puis on prend le reste de la division par 100.</p>
-
-  <div class="card">
-    <div class="card-title"><i class="ti ti-keyboard"></i>Calculateur</div>
-
-    <input type="text" id="si" placeholder="Tapez un mot (ex : BONJOUR)" maxlength="20" oninput="upS()" autocomplete="off" spellcheck="false" />
-
-    <div class="chip-row" id="s-chips"></div>
-
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-val" id="s-sum">—</div>
-        <div class="stat-lbl">Somme A+B+C…</div>
-      </div>
-      <div class="stat">
-        <div class="stat-val" id="s-mod">—</div>
-        <div class="stat-lbl">Division (mod 100) : reste</div>
-      </div>
-      <div class="stat accent-teal">
-        <div class="stat-val" id="s-hash">—</div>
-        <div class="stat-lbl">Hash final</div>
-      </div>
-    </div>
-
-    <div id="s-collision-info" class="collision-info" style="display:none"></div>
-  </div>
-
-  <div class="card">
-    <div class="card-title"><i class="ti ti-alert-triangle"></i>Limite du hash simple</div>
-    <p class="card-desc">Le hash simple a une grande faiblesse : il est facile de trouver deux mots avec le même résultat (une "collision"). Essayez "AZ" et "M" — même hash ? Et pourquoi c'est un problème pour la sécurité ?</p>
-    <div class="prop-grid">
-      <div class="prop-card teal">
-        <div class="prop-title">Ce qui marche</div>
-        <div class="prop-desc">Déterministe ✓<br>Taille fixe (2 chiffres) ✓<br>Rapide à calculer ✓</div>
-      </div>
-      <div class="prop-card coral">
-        <div class="prop-title">Ce qui ne marche pas</div>
-        <div class="prop-desc">Collisions faciles ✗<br>Inversible (on devine la somme) ✗<br>Pas d'effet avalanche ✗</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ SECTION 2 : SHA-256 ══ -->
-<div class="section" id="sec-sha256">
-  <p class="section-intro"><span>SHA-256</span> — le vrai hachage cryptographique</p>
-  <p class="section-intro-sub">Comparez deux textes très proches. Une seule lettre de différence et l'empreinte numérique change complètement — c'est l'<strong style="color:var(--coral)">effet avalanche</strong>.</p>
-
-  <div class="card">
-    <div class="card-title"><i class="ti ti-arrows-diff"></i>Comparateur en temps réel</div>
-
-    <div class="col2">
+      /* ── Scrollbar ── */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--dark);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e3550;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
       <div>
-        <span class="col-label">Texte A</span>
-        <input type="text" id="sha-a" value="Bonjour" oninput="upSHA()" autocomplete="off" spellcheck="false" />
-        <div class="hash-display" id="ha-out">—</div>
+        <div class="header-title">
+          Atelier <span>Hachage Cryptographique</span>
+        </div>
+        <div class="header-sub">Nadjib Achir — Inria TRiBE</div>
       </div>
-      <div>
-        <span class="col-label">Texte B</span>
-        <input type="text" id="sha-b" value="bonjour" oninput="upSHA()" autocomplete="off" spellcheck="false" />
-        <div class="hash-display" id="hb-out">—</div>
-      </div>
-    </div>
+      <span class="badge">Visite lycéens</span>
+    </header>
 
-    <div style="margin-top:24px;">
-      <span class="col-label">Comparaison caractère par caractère (hash de A) — <span style="color:#334155">gris</span> = identique, <span style="color:var(--coral);font-weight:700">rouge</span> = différent</span>
-      <div class="hash-display" id="sha-diff" style="line-height:2.0;letter-spacing:.05em;"></div>
-    </div>
-
-    <div class="stats" style="margin-top:20px;">
-      <div class="stat">
-        <div class="stat-val" id="n-same">—</div>
-        <div class="stat-lbl">Caractères identiques</div>
-      </div>
-      <div class="stat accent-coral">
-        <div class="stat-val" id="n-diff">—</div>
-        <div class="stat-lbl">Caractères différents</div>
-      </div>
-      <div class="stat accent-coral">
-        <div class="stat-val" id="n-pct">—</div>
-        <div class="stat-lbl">% de différence</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title"><i class="ti ti-list"></i>Les 4 propriétés de SHA-256</div>
-    <div class="prop-grid">
-      <div class="prop-card teal">
-        <div class="prop-title">1. Déterministe</div>
-        <div class="prop-desc">Même entrée → toujours exactement la même empreinte. Indispensable pour vérifier une signature.</div>
-      </div>
-      <div class="prop-card coral">
-        <div class="prop-title">2. Sens unique</div>
-        <div class="prop-desc">Impossible de retrouver le message original à partir du hash. C'est pourquoi on protège les mots de passe avec ça.</div>
-      </div>
-      <div class="prop-card navy">
-        <div class="prop-title">3. Taille fixe</div>
-        <div class="prop-desc">SHA-256 produit toujours 256 bits (64 caractères hexadécimaux) — que l'entrée fasse 1 lettre ou 1 million.</div>
-      </div>
-      <div class="prop-card mint">
-        <div class="prop-title">4. Effet avalanche</div>
-        <div class="prop-desc">1 seul bit modifié → environ 50% du hash change. Rend impossible toute "devinette progressive".</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ══ SECTION 3 : MAC & vie privée ══ -->
-<div class="section" id="sec-mac">
-  <p class="section-intro">Adresses MAC &amp; <span>vie privée</span></p>
-  <p class="section-intro-sub">Dans le projet MITIK, chaque adresse MAC capturée est immédiatement hachée sur l'appareil, avant tout stockage. Ainsi, personne — même nous — ne peut retrouver qui vous êtes.</p>
-
-  <div class="card">
-    <div class="card-title"><i class="ti ti-fingerprint"></i>Démonstration live</div>
-    <p class="card-desc">Cliquez sur "Générer" pour créer une adresse MAC aléatoire et voir son pseudo-identifiant haché en temps réel.</p>
-
-    <div class="pipeline">
-      <div>
-        <div class="pipe-box" id="mac-raw" style="min-width:160px;">AA:BB:CC:DD:EE:FF</div>
-        <div class="pipe-label" style="text-align:center;margin-top:6px;">Adresse MAC (identité réelle)</div>
-      </div>
-      <div class="pipe-arrow">→</div>
-      <div style="text-align:center;">
-        <div style="font-size:12px;color:var(--teal);font-weight:600;margin-bottom:4px;">SHA-256</div>
-        <div style="font-size:11px;color:var(--gray);">256 bits en ~0.001 ms</div>
-      </div>
-      <div class="pipe-arrow">→</div>
-      <div>
-        <div class="pipe-box result" id="mac-hash" style="min-width:160px;">…</div>
-        <div class="pipe-label" style="text-align:center;margin-top:6px;">Pseudo-ID (12 premiers chiffres hex)</div>
-      </div>
-    </div>
-
-    <div style="margin-top:8px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-      <button class="btn" onclick="randMAC()">
-        <i class="ti ti-refresh"></i> Générer une nouvelle adresse
+    <nav class="tabs">
+      <button class="tab-btn active" onclick="showTab('simple', this)">
+        <i class="ti ti-math-function"></i>Hash simple
       </button>
-      <span style="font-size:13px;color:var(--gray);">Chaque clic → nouvelle adresse → hash totalement différent</span>
-    </div>
-  </div>
+      <button class="tab-btn" onclick="showTab('sha256', this)">
+        <i class="ti ti-shield-lock"></i>SHA-256
+      </button>
+      <button class="tab-btn" onclick="showTab('mac', this)">
+        <i class="ti ti-device-mobile"></i>MAC & vie privée
+      </button>
+      <button class="tab-btn" onclick="showTab('defis', this)">
+        <i class="ti ti-puzzle"></i>Défis
+      </button>
+    </nav>
 
-  <div class="card">
-    <div class="card-title"><i class="ti ti-lock"></i>Pourquoi c'est efficace</div>
-    <div class="prop-grid">
-      <div class="prop-card teal">
-        <div class="prop-title">Ce qu'on stocke</div>
-        <div class="prop-desc">Uniquement le hash (pseudo-ID). Jamais l'adresse MAC réelle. Jamais votre nom ou votre numéro de téléphone.</div>
+    <main>
+      <!-- ══ SECTION 1 : Hash simple ══ -->
+      <div class="section active" id="sec-simple">
+        <p class="section-intro">Hash <span>simple</span></p>
+        <p class="section-intro-sub">
+          Chaque lettre vaut sa position dans l'alphabet (A=1, B=2 … Z=26). On
+          additionne toutes les valeurs, puis on prend le reste de la division
+          par 100.
+        </p>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-keyboard"></i>Calculateur
+          </div>
+
+          <input
+            type="text"
+            id="si"
+            placeholder="Tapez un mot (ex : BONJOUR)"
+            maxlength="20"
+            oninput="upS()"
+            autocomplete="off"
+            spellcheck="false"
+          />
+
+          <div class="chip-row" id="s-chips"></div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-val" id="s-sum">—</div>
+              <div class="stat-lbl">Somme A+B+C…</div>
+            </div>
+            <div class="stat">
+              <div class="stat-val" id="s-mod">—</div>
+              <div class="stat-lbl">Division (mod 100) : reste</div>
+            </div>
+            <div class="stat accent-teal">
+              <div class="stat-val" id="s-hash">—</div>
+              <div class="stat-lbl">Hash final</div>
+            </div>
+          </div>
+
+          <div
+            id="s-collision-info"
+            class="collision-info"
+            style="display: none"
+          ></div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-alert-triangle"></i>Limite du hash simple
+          </div>
+          <p class="card-desc">
+            Le hash simple a une grande faiblesse : il est facile de trouver
+            deux mots avec le même résultat (une "collision"). Essayez "AZ" et
+            "M" — même hash ? Et pourquoi c'est un problème pour la sécurité ?
+          </p>
+          <div class="prop-grid">
+            <div class="prop-card teal">
+              <div class="prop-title">Ce qui marche</div>
+              <div class="prop-desc">
+                Déterministe ✓<br />Taille fixe (2 chiffres) ✓<br />Rapide à
+                calculer ✓
+              </div>
+            </div>
+            <div class="prop-card coral">
+              <div class="prop-title">Ce qui ne marche pas</div>
+              <div class="prop-desc">
+                Collisions faciles ✗<br />Inversible (on devine la somme) ✗<br />Pas
+                d'effet avalanche ✗
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="prop-card mint">
-        <div class="prop-title">Ce qu'on peut faire</div>
-        <div class="prop-desc">Compter combien de personnes sont passées. Retracer un trajet anonyme. Analyser des flux de mobilité.</div>
+
+      <!-- ══ SECTION 2 : SHA-256 ══ -->
+      <div class="section" id="sec-sha256">
+        <p class="section-intro">
+          <span>SHA-256</span> — le vrai hachage cryptographique
+        </p>
+        <p class="section-intro-sub">
+          Comparez deux textes très proches. Une seule lettre de différence et
+          l'empreinte numérique change complètement — c'est l'<strong
+            style="color: var(--coral)"
+            >effet avalanche</strong
+          >.
+        </p>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-arrows-diff"></i>Comparateur en temps réel
+          </div>
+
+          <div class="col2">
+            <div>
+              <span class="col-label">Texte A</span>
+              <input
+                type="text"
+                id="sha-a"
+                value="Bonjour"
+                oninput="upSHA()"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <div class="hash-display" id="ha-out">—</div>
+            </div>
+            <div>
+              <span class="col-label">Texte B</span>
+              <input
+                type="text"
+                id="sha-b"
+                value="bonjour"
+                oninput="upSHA()"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <div class="hash-display" id="hb-out">—</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px">
+            <span class="col-label"
+              >Comparaison caractère par caractère (hash de A) —
+              <span style="color: #334155">gris</span> = identique,
+              <span style="color: var(--coral); font-weight: 700">rouge</span> =
+              différent</span
+            >
+            <div
+              class="hash-display"
+              id="sha-diff"
+              style="line-height: 2; letter-spacing: 0.05em"
+            ></div>
+          </div>
+
+          <div class="stats" style="margin-top: 20px">
+            <div class="stat">
+              <div class="stat-val" id="n-same">—</div>
+              <div class="stat-lbl">Caractères identiques</div>
+            </div>
+            <div class="stat accent-coral">
+              <div class="stat-val" id="n-diff">—</div>
+              <div class="stat-lbl">Caractères différents</div>
+            </div>
+            <div class="stat accent-coral">
+              <div class="stat-val" id="n-pct">—</div>
+              <div class="stat-lbl">% de différence</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-list"></i>Les 4 propriétés de SHA-256
+          </div>
+          <div class="prop-grid">
+            <div class="prop-card teal">
+              <div class="prop-title">1. Déterministe</div>
+              <div class="prop-desc">
+                Même entrée → toujours exactement la même empreinte.
+                Indispensable pour vérifier une signature.
+              </div>
+            </div>
+            <div class="prop-card coral">
+              <div class="prop-title">2. Sens unique</div>
+              <div class="prop-desc">
+                Impossible de retrouver le message original à partir du hash.
+                C'est pourquoi on protège les mots de passe avec ça.
+              </div>
+            </div>
+            <div class="prop-card navy">
+              <div class="prop-title">3. Taille fixe</div>
+              <div class="prop-desc">
+                SHA-256 produit toujours 256 bits (64 caractères hexadécimaux) —
+                que l'entrée fasse 1 lettre ou 1 million.
+              </div>
+            </div>
+            <div class="prop-card mint">
+              <div class="prop-title">4. Effet avalanche</div>
+              <div class="prop-desc">
+                1 seul bit modifié → environ 50% du hash change. Rend impossible
+                toute "devinette progressive".
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="prop-card coral">
-        <div class="prop-title">Ce qu'on ne peut PAS faire</div>
-        <div class="prop-desc">Identifier une personne spécifique. Retrouver l'adresse MAC d'origine depuis le hash. Vous cibler individuellement.</div>
+
+      <!-- ══ SECTION 3 : MAC & vie privée ══ -->
+      <div class="section" id="sec-mac">
+        <p class="section-intro">Adresses MAC &amp; <span>vie privée</span></p>
+        <p class="section-intro-sub">
+          Dans le projet MITIK, chaque adresse MAC capturée est immédiatement
+          hachée sur l'appareil, avant tout stockage. Ainsi, personne — même
+          nous — ne peut retrouver qui vous êtes.
+        </p>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-fingerprint"></i>Démonstration live
+          </div>
+          <p class="card-desc">
+            Cliquez sur "Générer" pour créer une adresse MAC aléatoire et voir
+            son pseudo-identifiant haché en temps réel.
+          </p>
+
+          <div class="pipeline">
+            <div>
+              <div class="pipe-box" id="mac-raw" style="min-width: 160px">
+                AA:BB:CC:DD:EE:FF
+              </div>
+              <div
+                class="pipe-label"
+                style="text-align: center; margin-top: 6px"
+              >
+                Adresse MAC (identité réelle)
+              </div>
+            </div>
+            <div class="pipe-arrow">→</div>
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 12px;
+                  color: var(--teal);
+                  font-weight: 600;
+                  margin-bottom: 4px;
+                "
+              >
+                SHA-256
+              </div>
+              <div style="font-size: 11px; color: var(--gray)">
+                256 bits en ~0.001 ms
+              </div>
+            </div>
+            <div class="pipe-arrow">→</div>
+            <div>
+              <div
+                class="pipe-box result"
+                id="mac-hash"
+                style="min-width: 160px"
+              >
+                …
+              </div>
+              <div
+                class="pipe-label"
+                style="text-align: center; margin-top: 6px"
+              >
+                Pseudo-ID (12 premiers chiffres hex)
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-top: 8px;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              flex-wrap: wrap;
+            "
+          >
+            <button class="btn" onclick="randMAC()">
+              <i class="ti ti-refresh"></i> Générer une nouvelle adresse
+            </button>
+            <span style="font-size: 13px; color: var(--gray)"
+              >Chaque clic → nouvelle adresse → hash totalement différent</span
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <i class="ti ti-lock"></i>Pourquoi c'est efficace
+          </div>
+          <div class="prop-grid">
+            <div class="prop-card teal">
+              <div class="prop-title">Ce qu'on stocke</div>
+              <div class="prop-desc">
+                Uniquement le hash (pseudo-ID). Jamais l'adresse MAC réelle.
+                Jamais votre nom ou votre numéro de téléphone.
+              </div>
+            </div>
+            <div class="prop-card mint">
+              <div class="prop-title">Ce qu'on peut faire</div>
+              <div class="prop-desc">
+                Compter combien de personnes sont passées. Retracer un trajet
+                anonyme. Analyser des flux de mobilité.
+              </div>
+            </div>
+            <div class="prop-card coral">
+              <div class="prop-title">Ce qu'on ne peut PAS faire</div>
+              <div class="prop-desc">
+                Identifier une personne spécifique. Retrouver l'adresse MAC
+                d'origine depuis le hash. Vous cibler individuellement.
+              </div>
+            </div>
+            <div class="prop-card navy">
+              <div class="prop-title">Conformité RGPD</div>
+              <div class="prop-desc">
+                L'anonymisation se fait sur l'appareil (Raspberry Pi), avant
+                tout envoi réseau. Les données ne quittent jamais le sniffer
+                sous forme identifiable.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="prop-card navy">
-        <div class="prop-title">Conformité RGPD</div>
-        <div class="prop-desc">L'anonymisation se fait sur l'appareil (Raspberry Pi), avant tout envoi réseau. Les données ne quittent jamais le sniffer sous forme identifiable.</div>
+
+      <!-- ══ SECTION 4 : Défis ══ -->
+      <div class="section" id="sec-defis">
+        <p class="section-intro">Défis — <span>à vous de jouer !</span></p>
+        <p class="section-intro-sub">
+          4 défis pour tester votre compréhension du hachage. Utilisez les
+          sections précédentes pour répondre.
+        </p>
+
+        <div class="challenge">
+          <div class="chal-num">Défi 1 — Trouver une collision</div>
+          <div class="chal-q">
+            En utilisant le <strong>hash simple</strong> (section 1), trouvez
+            deux mots différents qui donnent le même résultat (même chiffre
+            entre 0 et 99). Qui y arrive le premier dans la classe ?
+          </div>
+          <button class="hint-btn" onclick="tog('h1')">
+            <i class="ti ti-bulb"></i> Indice
+          </button>
+          <div class="hint-box" id="h1">
+            Cherchez deux mots dont les lettres ont la même somme totale (ou une
+            somme qui diffère d'exactement 100). Exemple : "AZ" = 1+26 = 27, et
+            "M" = 13… raté. Mais "BA" = 2+1 = 3 et "C" = 3 → collision ! Essayez
+            avec des prénoms.
+          </div>
+        </div>
+
+        <div class="challenge">
+          <div class="chal-num">Défi 2 — L'effet avalanche en chiffres</div>
+          <div class="chal-q">
+            Dans la section <strong>SHA-256</strong>, entrez votre prénom dans
+            le champ A. Dans le champ B, entrez le même prénom mais avec une
+            seule lettre modifiée. Quel pourcentage du hash a changé ? Est-ce
+            que le résultat vous surprend ?
+          </div>
+          <button class="hint-btn" onclick="tog('h2')">
+            <i class="ti ti-bulb"></i> Réponse attendue
+          </button>
+          <div class="hint-box" id="h2">
+            En moyenne, modifier un seul caractère change environ
+            <strong style="color: var(--coral)">50% des caractères</strong> du
+            hash SHA-256. Ce n'est pas un hasard : c'est une propriété
+            mathématique intentionnelle. Sans cet effet avalanche, on pourrait
+            "s'approcher" d'un hash par essais successifs.
+          </div>
+        </div>
+
+        <div class="challenge">
+          <div class="chal-num">Défi 3 — Sens unique</div>
+          <div class="chal-q">
+            Le hash SHA-256 du mot <code>lycéens</code> commence par
+            <code id="c3h">…</code>. Pouvez-vous retrouver le mot original en ne
+            regardant que cette empreinte ? Combien de temps faudrait-il à un
+            ordinateur pour le trouver par force brute ?
+          </div>
+          <button class="hint-btn" onclick="tog('h3')">
+            <i class="ti ti-bulb"></i> Réponse
+          </button>
+          <div class="hint-box" id="h3">
+            C'est mathématiquement impossible en temps raisonnable. SHA-256
+            produit 2<sup>256</sup> valeurs possibles. Même en testant un
+            milliard de milliards de mots par seconde, il faudrait un temps bien
+            supérieur à l'âge de l'univers. C'est pourquoi on hache les mots de
+            passe — même si la base de données est volée, les mots de passe
+            restent protégés.
+          </div>
+        </div>
+
+        <div class="challenge">
+          <div class="chal-num">
+            Défi bonus — Pourquoi le hash simple est insuffisant pour la
+            sécurité ?
+          </div>
+          <div class="chal-q">
+            Vous avez vu que le hash simple a des collisions faciles à trouver.
+            Imaginez qu'un site web stocke vos mots de passe avec le hash
+            simple. Que pourrait faire un attaquant qui connaît le hash d'un mot
+            de passe ?
+          </div>
+          <button class="hint-btn" onclick="tog('h4')">
+            <i class="ti ti-bulb"></i> Explication
+          </button>
+          <div class="hint-box" id="h4">
+            L'attaquant n'aurait pas besoin de retrouver le mot de passe exact —
+            il lui suffit de trouver <em>n'importe quel</em> mot dont la somme
+            des lettres mod 100 donne le même résultat. C'est une collision !
+            Avec SHA-256, les collisions sont computationnellement impossibles à
+            trouver intentionnellement, ce qui en fait la base de la sécurité
+            moderne (HTTPS, Bitcoin, signatures numériques…).
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+    </main>
 
-<!-- ══ SECTION 4 : Défis ══ -->
-<div class="section" id="sec-defis">
-  <p class="section-intro">Défis — <span>à vous de jouer !</span></p>
-  <p class="section-intro-sub">4 défis pour tester votre compréhension du hachage. Utilisez les sections précédentes pour répondre.</p>
+    <footer>Nadjib Achir — Inria TRiBE — Visite lycéens 2025–2026</footer>
 
-  <div class="challenge">
-    <div class="chal-num">Défi 1 — Trouver une collision</div>
-    <div class="chal-q">
-      En utilisant le <strong>hash simple</strong> (section 1), trouvez deux mots différents qui donnent le même résultat (même chiffre entre 0 et 99). Qui y arrive le premier dans la classe ?
-    </div>
-    <button class="hint-btn" onclick="tog('h1')"><i class="ti ti-bulb"></i> Indice</button>
-    <div class="hint-box" id="h1">
-      Cherchez deux mots dont les lettres ont la même somme totale (ou une somme qui diffère d'exactement 100). Exemple : "AZ" = 1+26 = 27, et "M" = 13… raté. Mais "BA" = 2+1 = 3 et "C" = 3 → collision ! Essayez avec des prénoms.
-    </div>
-  </div>
+    <script>
+      // ── Tab navigation ────────────────────────────────────────────────────────────
+      function showTab(id, btn) {
+        document
+          .querySelectorAll(".section")
+          .forEach((s) => s.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("sec-" + id).classList.add("active");
+        btn.classList.add("active");
+      }
 
-  <div class="challenge">
-    <div class="chal-num">Défi 2 — L'effet avalanche en chiffres</div>
-    <div class="chal-q">
-      Dans la section <strong>SHA-256</strong>, entrez votre prénom dans le champ A. Dans le champ B, entrez le même prénom mais avec une seule lettre modifiée. Quel pourcentage du hash a changé ? Est-ce que le résultat vous surprend ?
-    </div>
-    <button class="hint-btn" onclick="tog('h2')"><i class="ti ti-bulb"></i> Réponse attendue</button>
-    <div class="hint-box" id="h2">
-      En moyenne, modifier un seul caractère change environ <strong style="color:var(--coral)">50% des caractères</strong> du hash SHA-256. Ce n'est pas un hasard : c'est une propriété mathématique intentionnelle. Sans cet effet avalanche, on pourrait "s'approcher" d'un hash par essais successifs.
-    </div>
-  </div>
+      // ── Hash simple ───────────────────────────────────────────────────────────────
+      let lastHash = null;
 
-  <div class="challenge">
-    <div class="chal-num">Défi 3 — Sens unique</div>
-    <div class="chal-q">
-      Le hash SHA-256 du mot <code>lycéens</code> commence par <code id="c3h">…</code>.
-      Pouvez-vous retrouver le mot original en ne regardant que cette empreinte ? Combien de temps faudrait-il à un ordinateur pour le trouver par force brute ?
-    </div>
-    <button class="hint-btn" onclick="tog('h3')"><i class="ti ti-bulb"></i> Réponse</button>
-    <div class="hint-box" id="h3">
-      C'est mathématiquement impossible en temps raisonnable. SHA-256 produit 2<sup>256</sup> valeurs possibles. Même en testant un milliard de milliards de mots par seconde, il faudrait un temps bien supérieur à l'âge de l'univers. C'est pourquoi on hache les mots de passe — même si la base de données est volée, les mots de passe restent protégés.
-    </div>
-  </div>
+      function upS() {
+        const raw = document
+          .getElementById("si")
+          .value.toUpperCase()
+          .replace(/[^A-Z]/g, "");
+        const chipsEl = document.getElementById("s-chips");
+        const sumEl = document.getElementById("s-sum");
+        const modEl = document.getElementById("s-mod");
+        const hashEl = document.getElementById("s-hash");
+        const infoEl = document.getElementById("s-collision-info");
 
-  <div class="challenge">
-    <div class="chal-num">Défi bonus — Pourquoi le hash simple est insuffisant pour la sécurité ?</div>
-    <div class="chal-q">
-      Vous avez vu que le hash simple a des collisions faciles à trouver. Imaginez qu'un site web stocke vos mots de passe avec le hash simple. Que pourrait faire un attaquant qui connaît le hash d'un mot de passe ?
-    </div>
-    <button class="hint-btn" onclick="tog('h4')"><i class="ti ti-bulb"></i> Explication</button>
-    <div class="hint-box" id="h4">
-      L'attaquant n'aurait pas besoin de retrouver le mot de passe exact — il lui suffit de trouver <em>n'importe quel</em> mot dont la somme des lettres mod 100 donne le même résultat. C'est une collision ! Avec SHA-256, les collisions sont computationnellement impossibles à trouver intentionnellement, ce qui en fait la base de la sécurité moderne (HTTPS, Bitcoin, signatures numériques…).
-    </div>
-  </div>
-</div>
+        if (!raw) {
+          chipsEl.innerHTML = "";
+          sumEl.textContent = modEl.textContent = hashEl.textContent = "—";
+          infoEl.style.display = "none";
+          lastHash = null;
+          return;
+        }
 
-</main>
+        let sum = 0,
+          html = "";
+        for (const c of raw) {
+          const v = c.charCodeAt(0) - 64;
+          sum += v;
+          html += `<div class="letter-chip"><span class="letter-ch">${c}</span><span class="letter-val">${v}</span></div>`;
+        }
+        if (raw.length > 1) {
+          html += `<span class="sum-label">= ${sum}</span>`;
+        }
+        chipsEl.innerHTML = html;
+        sumEl.textContent = sum;
+        const h = sum % 100;
+        modEl.textContent = `${sum} ÷ 100 = reste ${h}`;
+        hashEl.textContent = h;
 
-<footer>
-  Nadjib Achir — Inria TRiBE / Université Sorbonne Paris Nord — Visite lycéens 2025–2026
-</footer>
+        infoEl.style.display = "block";
+        infoEl.className = "collision-info";
+        infoEl.textContent = `Pour une collision, cherchez un autre mot dont les lettres totalisent ${sum}, ${sum + 100} ou ${sum - 100 > 0 ? sum - 100 : sum + 100}…`;
 
-<script>
-// ── Tab navigation ────────────────────────────────────────────────────────────
-function showTab(id, btn) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('sec-' + id).classList.add('active');
-  btn.classList.add('active');
-}
+        lastHash = h;
+      }
 
-// ── Hash simple ───────────────────────────────────────────────────────────────
-let lastHash = null;
+      // ── SHA-256 ───────────────────────────────────────────────────────────────────
+      async function h256(t) {
+        const d = new TextEncoder().encode(t);
+        const b = await crypto.subtle.digest("SHA-256", d);
+        return Array.from(new Uint8Array(b))
+          .map((x) => x.toString(16).padStart(2, "0"))
+          .join("");
+      }
 
-function upS() {
-  const raw = document.getElementById('si').value.toUpperCase().replace(/[^A-Z]/g, '');
-  const chipsEl = document.getElementById('s-chips');
-  const sumEl   = document.getElementById('s-sum');
-  const modEl   = document.getElementById('s-mod');
-  const hashEl  = document.getElementById('s-hash');
-  const infoEl  = document.getElementById('s-collision-info');
+      async function upSHA() {
+        const a = document.getElementById("sha-a").value;
+        const b = document.getElementById("sha-b").value;
+        const ha = a ? await h256(a) : "";
+        const hb = b ? await h256(b) : "";
 
-  if (!raw) {
-    chipsEl.innerHTML = '';
-    sumEl.textContent = modEl.textContent = hashEl.textContent = '—';
-    infoEl.style.display = 'none';
-    lastHash = null;
-    return;
-  }
+        document.getElementById("ha-out").textContent = ha || "—";
+        document.getElementById("hb-out").textContent = hb || "—";
 
-  let sum = 0, html = '';
-  for (const c of raw) {
-    const v = c.charCodeAt(0) - 64;
-    sum += v;
-    html += `<div class="letter-chip"><span class="letter-ch">${c}</span><span class="letter-val">${v}</span></div>`;
-  }
-  if (raw.length > 1) {
-    html += `<span class="sum-label">= ${sum}</span>`;
-  }
-  chipsEl.innerHTML = html;
-  sumEl.textContent = sum;
-  const h = sum % 100;
-  modEl.textContent  = `${sum} ÷ 100 = reste ${h}`;
-  hashEl.textContent = h;
+        if (!ha || !hb) {
+          document.getElementById("sha-diff").innerHTML = "";
+          ["n-same", "n-diff", "n-pct"].forEach(
+            (id) => (document.getElementById(id).textContent = "—"),
+          );
+          return;
+        }
 
-  infoEl.style.display = 'block';
-  infoEl.className = 'collision-info';
-  infoEl.textContent = `Pour une collision, cherchez un autre mot dont les lettres totalisent ${sum}, ${sum + 100} ou ${sum - 100 > 0 ? sum - 100 : sum + 100}…`;
+        let same = 0,
+          diff = 0,
+          html = "";
+        for (let i = 0; i < ha.length; i++) {
+          if (ha[i] === hb[i]) {
+            html += `<span class="diff-same">${ha[i]}</span>`;
+            same++;
+          } else {
+            html += `<span class="diff-changed">${ha[i]}</span>`;
+            diff++;
+          }
+        }
+        document.getElementById("sha-diff").innerHTML = html;
+        document.getElementById("n-same").textContent = same;
+        document.getElementById("n-diff").textContent = diff;
+        document.getElementById("n-pct").textContent =
+          Math.round((diff / ha.length) * 100) + "%";
+      }
 
-  lastHash = h;
-}
+      // ── MAC anonymisation ─────────────────────────────────────────────────────────
+      async function randMAC() {
+        const hx = () =>
+          Math.floor(Math.random() * 256)
+            .toString(16)
+            .padStart(2, "0")
+            .toUpperCase();
+        const mac = [hx(), hx(), hx(), hx(), hx(), hx()].join(":");
+        document.getElementById("mac-raw").textContent = mac;
+        const hash = await h256(mac);
+        document.getElementById("mac-hash").textContent = hash.substring(0, 12);
+      }
 
-// ── SHA-256 ───────────────────────────────────────────────────────────────────
-async function h256(t) {
-  const d = new TextEncoder().encode(t);
-  const b = await crypto.subtle.digest('SHA-256', d);
-  return Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2, '0')).join('');
-}
+      // ── Hints ─────────────────────────────────────────────────────────────────────
+      function tog(id) {
+        const el = document.getElementById(id);
+        el.style.display = el.style.display === "block" ? "none" : "block";
+      }
 
-async function upSHA() {
-  const a = document.getElementById('sha-a').value;
-  const b = document.getElementById('sha-b').value;
-  const ha = a ? await h256(a) : '';
-  const hb = b ? await h256(b) : '';
-
-  document.getElementById('ha-out').textContent = ha || '—';
-  document.getElementById('hb-out').textContent = hb || '—';
-
-  if (!ha || !hb) {
-    document.getElementById('sha-diff').innerHTML = '';
-    ['n-same','n-diff','n-pct'].forEach(id => document.getElementById(id).textContent = '—');
-    return;
-  }
-
-  let same = 0, diff = 0, html = '';
-  for (let i = 0; i < ha.length; i++) {
-    if (ha[i] === hb[i]) {
-      html += `<span class="diff-same">${ha[i]}</span>`;
-      same++;
-    } else {
-      html += `<span class="diff-changed">${ha[i]}</span>`;
-      diff++;
-    }
-  }
-  document.getElementById('sha-diff').innerHTML = html;
-  document.getElementById('n-same').textContent = same;
-  document.getElementById('n-diff').textContent = diff;
-  document.getElementById('n-pct').textContent  = Math.round(diff / ha.length * 100) + '%';
-}
-
-// ── MAC anonymisation ─────────────────────────────────────────────────────────
-async function randMAC() {
-  const hx = () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase();
-  const mac = [hx(), hx(), hx(), hx(), hx(), hx()].join(':');
-  document.getElementById('mac-raw').textContent  = mac;
-  const hash = await h256(mac);
-  document.getElementById('mac-hash').textContent = hash.substring(0, 12);
-}
-
-// ── Hints ─────────────────────────────────────────────────────────────────────
-function tog(id) {
-  const el = document.getElementById(id);
-  el.style.display = el.style.display === 'block' ? 'none' : 'block';
-}
-
-// ── Init ──────────────────────────────────────────────────────────────────────
-document.getElementById('si').value = 'BONJOUR';
-upS();
-upSHA();
-randMAC();
-h256('lycéens').then(h => document.getElementById('c3h').textContent = h.substring(0, 20) + '…');
-</script>
-</body>
+      // ── Init ──────────────────────────────────────────────────────────────────────
+      document.getElementById("si").value = "BONJOUR";
+      upS();
+      upSHA();
+      randMAC();
+      h256("lycéens").then(
+        (h) =>
+          (document.getElementById("c3h").textContent =
+            h.substring(0, 20) + "…"),
+      );
+    </script>
+  </body>
 </html>
