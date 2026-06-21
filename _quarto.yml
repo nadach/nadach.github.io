@@ -5,6 +5,7 @@ project:
     - cv_nadjib_achir.pdf
 
 resources:
+  - atelier_hachage.html
   - CNAME
 
 website:
