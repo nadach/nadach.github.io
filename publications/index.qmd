@@ -15,6 +15,12 @@ format:
 
 <!-- references -->
 
+## 2026
+
+### Conference & workshop papers
+1. [Conference]{.pubtype .conf} **LIQOS-ViT: Learned Importance guided Quantization with Outlier awareness for Split inference ViTs**. A. Dhaouadi, C. Adjih, N. Achir. *51st IEEE Conference on Local Computer Networks, LCN 2026, Coimbra, Portugal, October 7-9, 2026*, 2026. [pdf](../files/papers/LCN2026.pdf)
+1. [Conference]{.pubtype .conf} **How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness**. L. G. S. F\'elix, A. J. Kouam, A. C. Viana, N. Achir, J. M. Almeida. *31st European Symposium on Research in Computer Security, ESORICS 2026, Rome, Italy, September 14-18, 2026*, 2026. [pdf](https://hal.science/hal-05673357/document)
+
 ## 2025
 
 ### Journal articles

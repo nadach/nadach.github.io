@@ -1,0 +1,16 @@
+---
+title: "Paper accepted at LCN 2026"
+description: "LIQOS-ViT: Learned Importance guided Quantization with Outlier awareness for Split inference ViTs"
+author: "Amira Dhaouadi and Cédric Adjih and Nadjib Achir"
+date: "07/21/2026"
+categories: [News]
+featured: true
+---
+
+## Description
+
+Our paper **"LIQOS-ViT: Learned Importance guided Quantization with Outlier awareness for Split inference ViTs"** has been accepted at [LCN 2026](https://www.ieeelcn.org/), the 51st IEEE Conference on Local Computer Networks, to be held in Coimbra, Portugal, October 7-9, 2026.
+
+Vision Transformers (ViTs) are powerful but too heavy to run fully on resource-constrained edge and IoT devices. Split computing addresses this by dividing inference between the edge device and a remote server, but transmitting intermediate activations across the split point can introduce substantial communication overhead. In this work, we propose an adaptive mixed-precision quantization framework that estimates the importance of individual activation values, groups and normalizes them to limit the impact of outliers, and allocates bit-widths accordingly under a global compression budget. The resulting approach reduces transmission cost while preserving model accuracy, making split ViT inference more practical in edge-server environments.
+
+The paper is available [here](http://arxiv.org/abs/2607.17893).

@@ -1,0 +1,24 @@
+---
+title: "Paper accepted at ESORICS 2026"
+description: "How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness"
+author: "Lucas G. S. Félix and Anne Josiane Kouam and Aline C. Viana and Nadjib Achir and Jussara M. Almeida"
+date: "07/21/2026"
+categories: [News]
+featured: true
+---
+
+## Description
+
+Our paper **"How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness"** has been accepted at [ESORICS 2026](https://esorics2026.di.uniroma1.it/), the 31st European Symposium on Research in Computer Security, to be held in Rome, Italy, September 14-18, 2026.
+
+Individual-level mobility data enables valuable applications but raises significant privacy risks due to the distinctive nature of human mobility and susceptibility to identification. Existing work on quantifying user exposure focuses on location-based and spatio-temporal distinctiveness, emphasizing visited places and trajectory uniqueness. In this paper, we propose a complementary perspective based on persistent mobility behaviors, such as routines and mobility preferences, which can make users distinctive beyond raw locations. We introduce HEXPOSE (Hyperbox-based Exposure in a Mobility Behavioral Space), a framework that represents users in a multidimensional behavioral space and defines individualized indistinguishability regions to quantify exposure. Through empirical analysis of two large-scale real-world cellular datasets, we show that behavioral exposure reveals vulnerable users and patterns that are not captured by state-of-the-art location-based approaches.
+
+The paper is available [here](https://hal.science/hal-05673357/document).
+
+## Collaboration
+
+This is joint work with Lucas G. S. Félix, Anne Josiane Kouam, Aline C. Viana, and Jussara M. Almeida, in collaboration with the TRiBE team (Inria) and the Universidade Federal de Minas Gerais (UFMG), Brazil.
+
+## Context
+
+This work was carried out at Inria.

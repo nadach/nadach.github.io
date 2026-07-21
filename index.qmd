@@ -18,7 +18,7 @@ about: # https://quarto.org/docs/websites/website-about.html
       text: LinkedIn
       href: https://linkedin.com/in/nadjib-achir-179b1a32/
     - text: cv
-      href: cv_nadjib_achir.pdf
+      href: files/cv/cv_nadjib_achir.pdf
       target: _blank
 comments: false
 listing:

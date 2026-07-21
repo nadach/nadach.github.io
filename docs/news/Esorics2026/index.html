@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lucas G. S. Félix and Anne Josiane Kouam and Aline C. Viana and Nadjib Achir and Jussara M. Almeida">
+<meta name="dcterms.date" content="2026-07-21">
+<meta name="description" content="How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness">
 
-<title>Nadjib Achir</title>
+<title>Paper accepted at ESORICS 2026 – Nadjib Achir</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,28 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7b0fbcc4c3fe6d2ae47281e72e67b393.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7b0fbcc4c3fe6d2ae47281e72e67b393.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,69 +73,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-featured-news .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-featured-news'] = new List('listing-featured-news', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Nadjib Achir">
-<meta property="og:description" content="Inria Researcher (CRHC)">
-<meta property="og:image" content="img/Nadjib.Achir.jpg">
+<meta property="og:title" content="Paper accepted at ESORICS 2026 – Nadjib Achir">
+<meta property="og:description" content="How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness">
 <meta property="og:site_name" content="Nadjib Achir">
 </head>
 
@@ -148,7 +87,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Nadjib Achir</span>
     </a>
   </div>
@@ -159,20 +98,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./news/index.html"> <i class="bi bi-megaphone" role="img">
+    <a class="nav-link" href="../../news/index.html"> <i class="bi bi-megaphone" role="img">
 </i> 
 <span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/index.html"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications/index.html"> 
+    <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Papers</span></a>
   </li>  
 </ul>
@@ -183,122 +122,89 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#news" id="toc-news" class="nav-link active" data-scroll-target="#news">News</a></li>
-  <li><a href="#bio" id="toc-bio" class="nav-link" data-scroll-target="#bio">Bio</a></li>
-  <li><a href="#address" id="toc-address" class="nav-link" data-scroll-target="#address">Address</a></li>
+  <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
+  <li><a href="#collaboration" id="toc-collaboration" class="nav-link" data-scroll-target="#collaboration">Collaboration</a></li>
+  <li><a href="#context" id="toc-context" class="nav-link" data-scroll-target="#context">Context</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles column-page-left">
-  <div class="about-entity">
-    <img src="img/Nadjib.Achir.jpg" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Nadjib Achir</h1>
-<p class="subtitle lead">Inria Researcher (CRHC)</p>
-</div>
-<div class="quarto-title-meta column-page-left">
+<h1 class="title">Paper accepted at ESORICS 2026</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">News</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas G. S. Félix and Anne Josiane Kouam and Aline C. Viana and Nadjib Achir and Jussara M. Almeida </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 21, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="mailto:nadjib.achir@inria.fr" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i> Email</span>
-  </a>
-  <a href="https://cv.hal.science/nadjib-achir" class="about-link" rel="" target="">
-     <span class="about-link-text">Hal-id</span>
-  </a>
-  <a href="https://scholar.google.com/citations?user=fL5sKqMAAAAJ&amp;hl=fr" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="ai  ai-google-scholar" aria-label="google-scholar"></i> Google Scholar</span>
-  </a>
-  <a href="https://orcid.org/0000-0002-5449-948X" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="ai  ai-orcid" aria-label="orcid"></i> ORCID 0000-0002-5449-948X</span>
-  </a>
-  <a href="https://linkedin.com/in/nadjib-achir-179b1a32/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="/files/cv/cv_nadjib_achir.pdf" class="about-link" rel="" target="_blank">
-     <span class="about-link-text">cv</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content column-page-left" id="quarto-document-content">
 
-<!-- :::: {.column-margin}
-:::: -->
-<section id="news" class="level2">
-<h2 data-anchor-id="news">News</h2>
-<div id="listing-featured-news" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="TmV3cw==" data-listing-date-sort="1784584800000" data-listing-file-modified-sort="1784634801767" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203" data-listing-title-sort="Paper accepted at ESORICS 2026" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 21, 2026</span>
-</td>
-<td>
-<a href="./news/Esorics2026/index.html" class="title listing-title">Paper accepted at ESORICS 2026</a>
-</td>
-</tr>
-<tr data-index="1" data-categories="TmV3cw==" data-listing-date-sort="1784584800000" data-listing-file-modified-sort="1784634473240" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141" data-listing-title-sort="Paper accepted at LCN 2026" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jul 21, 2026</span>
-</td>
-<td>
-<a href="./news/lcn2026/index.html" class="title listing-title">Paper accepted at LCN 2026</a>
-</td>
-</tr>
-<tr data-index="2" data-categories="TmV3cw==" data-listing-date-sort="1772060400000" data-listing-file-modified-sort="1782048592361" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543" data-listing-title-sort="PostDoc Position @NOKIA Bell Labs, @TRiBE/NEO-INRIA" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Feb 26, 2026</span>
-</td>
-<td>
-<a href="./news/posdoc-nokia-2026/index.html" class="title listing-title">PostDoc Position <span class="citation" data-cites="NOKIA">@NOKIA</span> Bell Labs, <span class="citation" data-cites="TRiBE/NEO-INRIA">@TRiBE/NEO-INRIA</span></a>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+
+<section id="description" class="level2">
+<h2 class="anchored" data-anchor-id="description">Description</h2>
+<p>Our paper <strong>“How Behavioral Exposure Reveals Privacy Risks Beyond Location Uniqueness”</strong> has been accepted at <a href="https://esorics2026.di.uniroma1.it/">ESORICS 2026</a>, the 31st European Symposium on Research in Computer Security, to be held in Rome, Italy, September 14-18, 2026.</p>
+<p>Individual-level mobility data enables valuable applications but raises significant privacy risks due to the distinctive nature of human mobility and susceptibility to identification. Existing work on quantifying user exposure focuses on location-based and spatio-temporal distinctiveness, emphasizing visited places and trajectory uniqueness. In this paper, we propose a complementary perspective based on persistent mobility behaviors, such as routines and mobility preferences, which can make users distinctive beyond raw locations. We introduce HEXPOSE (Hyperbox-based Exposure in a Mobility Behavioral Space), a framework that represents users in a multidimensional behavioral space and defines individualized indistinguishability regions to quantify exposure. Through empirical analysis of two large-scale real-world cellular datasets, we show that behavioral exposure reveals vulnerable users and patterns that are not captured by state-of-the-art location-based approaches.</p>
+<p>The paper is available <a href="https://hal.science/hal-05673357/document">here</a>.</p>
 </section>
-<section id="bio" class="level2">
-<h2 data-anchor-id="bio">Bio</h2>
-<p>I am a <strong>researcher (HDR)</strong> at <a href="https://inria.fr/fr">Inria</a>, and a member of the <a href="https://team.inria.fr/tribe/">TRiBE</a> team at Inria Saclay.</p>
-<p>I was an <strong>Associate Professor (HDR)</strong> at <a href="https://www.univ-spn.fr/">Université Sorbonne Paris Nord</a> from 2004 to 2024, where I was fully dedicated to the Engineering School and contributed to training in telecommunications and networks, including responsibilities within the SupGalilée engineering school. Since September 2024, I have joined Inria as a full-time researcher.</p>
-<p>My recent research work focuses on two complementary directions: <strong>(i) collecting and analyzing mobility data</strong>, especially through measurements enabled by wireless networks <strong>(ii) resource allocation and computation offloading at the edge</strong>, to support ultra-responsive applications with strong latency and compute constraints. <strong>(iii) Edge AI</strong>, where I study how to bring modern ML to constrained IoT systems by leveraging split computing/split inference and dynamic offloading to nearby edge or cloud resources.</p>
+<section id="collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="collaboration">Collaboration</h2>
+<p>This is joint work with Lucas G. S. Félix, Anne Josiane Kouam, Aline C. Viana, and Jussara M. Almeida, in collaboration with the TRiBE team (Inria) and the Universidade Federal de Minas Gerais (UFMG), Brazil.</p>
 </section>
-<section id="address" class="level2">
-<h2 data-anchor-id="address">Address</h2>
-<p>Inria Saclay<br>
-Batiment Turing,&nbsp; 1 Rue Honoré d’Estienne d’Orves,<br>
-91120 Palaiseau, France</p>
-<iframe width="350" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=2.2052022814750676%2C48.71348598478913%2C2.206489741802216%2C48.71652815852404&amp;layer=mapnik" style="border: 1px solid black"></iframe><br><small><a href="https://www.openstreetmap.org/?#map=19/48.715007/2.205846">Afficher une carte plus grande</a></small>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>This work was carried out at Inria.</p>
 
 
 </section>
-</main></div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

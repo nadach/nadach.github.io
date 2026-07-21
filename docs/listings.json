@@ -1,7 +1,9 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/news/index.html",
     "items": [
+      "/news/Esorics2026/index.html",
+      "/news/lcn2026/index.html",
       "/news/posdoc-nokia-2026/index.html"
     ]
   },
@@ -10,8 +12,10 @@
     "items": []
   },
   {
-    "listing": "/news/index.html",
+    "listing": "/index.html",
     "items": [
+      "/news/Esorics2026/index.html",
+      "/news/lcn2026/index.html",
       "/news/posdoc-nokia-2026/index.html"
     ]
   }
